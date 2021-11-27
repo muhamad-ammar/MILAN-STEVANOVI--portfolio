@@ -36,7 +36,13 @@
 <!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+<style>
+    p{
+        padding: 0 5% !important;
+        color: black !important;
+    }
 
+</style>
 </head>
 <body>
  <!-- Preloading -->
@@ -122,7 +128,7 @@
                 <div class="blog-image">
                     <img src="../images/blogs/blog-3.jpg" alt="">
                 </div>
-                <div class="post-content">
+                <div class="post-content" style="padding: 5%;">
                     <h1 class="blog-title bottom_30 top_30">Deploy and Manage PostgreSQL on Kubernetes</h1>
                     <p>PostgreSQL database is an enterprise-grade, open-source object-relational database system focused on providing a highly scalable and robust platform while conforming to SQL standards. Kubernetes is an open-source container orchestration platform designed to be easily deployable in any environment. It enables users to easily deploy and manage containerized applications.</p>
 
@@ -136,31 +142,31 @@
                     
                     <p>When it comes to deploying PostgreSQL on Kubernetes, there are two options. One is to create a Kubernetes deployment from scratch, and the other is to use a helm chart to carry out the deployment.</p>
                     
-                    <h5 style="color:black">
+                    <h6 style="color:black">
                       <a name="option-01-creating-deployment-configuration-from-scratch" href="#option-01-creating-deployment-configuration-from-scratch" class="anchor">
                       </a>
                       Option 01 - Creating deployment configuration from scratch
-                    </h5>
+                    </h6>
                     
                     <p>This option requires the user to set up the ConfigMaps, create and set up persistent storage volumes and then create the PostgreSQL deployment and service. This process involves a higher degree of planning and technical knowledge to get the service up and running. Therefore, only use this option if you have specific requirements that require custom configurations from the ground up.</p>
                     
                     <p>Therefore, only use this option if you have specific requirements that require custom configurations such as complex persistent storage configurations, network and security policies, multi cluster connectivity etc...</p>
                     
-                    <h5 style="color:black">
+                    <h6 style="color:black">
                       <a name="option-02-use-a-helm-chart" href="#option-02-use-a-helm-chart" class="anchor">
                       </a>
                       Option 02 - Use a helm chart
-                    </h5>
+                    </h6>
                     
                     <p>Helm charts can be considered a type of package that can be used to easily deploy applications to Kubernetes clusters. These charts can be used in any kind of deployment, from a single pod application to complex applications consisting of multiple pods with different software and services.</p>
                     
                     <p>In this article, we will focus on using a helm chart to deploy a PostgreSQL instance. Before that, we should know what Helm is and how to configure Helm in a development environment.</p>
                     
-                    <h5 style="color:black">
+                    <h6 style="color:black">
                       <a name="what-is-helm" href="#what-is-helm" class="anchor">
                       </a>
                       What is Helm?
-                    </h5>
+                    </h6>
                     
                     <p>Helm is considered as the package manager for Kubernetes. It is an open-source project started with the goal of providing a more efficient way to manage Kubernetes YAML files created when deploying an application.</p>
                     
@@ -181,9 +187,9 @@
                     <h6>
                     
                     <ul>
-                    <li>  Chart - Contains Information required to create an application instance in Kubernetes </li>
-                    <li>  Config - Contains the configuration information that can be merged with a chart to create a releasable object.</li>
-                    <li>  Release - A running instance of a chart, combined with a specific config.</li>
+                    <li>  <p>Chart - Contains Information required to create an application instance in Kubernetes </p></li>
+                    <li>  <p>Config - Contains the configuration information that can be merged with a chart to create a releasable object.</p></li>
+                    <li>  <p>Release - A running instance of a chart, combined with a specific config.</p></li>
                     </ul>
                     
                     <p>Helm executable can be broken down into two components as follows;</p>
@@ -209,15 +215,15 @@
                     
                     <p><code>choco install kubernetes-helm</code></p>
                     
-                    <p>RESULT<br>
+                    <!-- <p>RESULT<br>
                     <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--5QIIrP2X--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/f-11Tpa0gxoJJpsVvcr1T0NJFg8_QpQjVNH1_lggdIy2NpDktX2LzpzZxvZFLNjKPfOUnWDQsZ9KCVBChEc2cJUEByKci6kc-LgW1THHcXZdW8Q_ESYRlukLvzcaxIH3MT-4MBY" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--5QIIrP2X--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/f-11Tpa0gxoJJpsVvcr1T0NJFg8_QpQjVNH1_lggdIy2NpDktX2LzpzZxvZFLNjKPfOUnWDQsZ9KCVBChEc2cJUEByKci6kc-LgW1THHcXZdW8Q_ESYRlukLvzcaxIH3MT-4MBY" alt="" loading="lazy"></a></p>
-                    
+                     -->
                     <p>That’s it, and you have completed installing Helm. Next, let’s verify the installation by checking the helm version using the command below.</p>
                     
                     <p><code>helm version</code></p>
                     
-                    <p>RESULT<br>
-                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--BllQFhC2--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh4.googleusercontent.com/-EYWdzKyzneOdqwqTgu1_yCaAg9Gp3bnBG4k5HeoOJB3WE30WNDGLS2VlxgH5IvTj-7gAW8kYN36AwVyHRZNg0PKJwH-qaqhpVUyStO7dSgVIPVmtOY465H8PLGw0zfjldr-tO0" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--BllQFhC2--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh4.googleusercontent.com/-EYWdzKyzneOdqwqTgu1_yCaAg9Gp3bnBG4k5HeoOJB3WE30WNDGLS2VlxgH5IvTj-7gAW8kYN36AwVyHRZNg0PKJwH-qaqhpVUyStO7dSgVIPVmtOY465H8PLGw0zfjldr-tO0" alt="" loading="lazy"></a></p>
+                    <!-- <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--BllQFhC2--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh4.googleusercontent.com/-EYWdzKyzneOdqwqTgu1_yCaAg9Gp3bnBG4k5HeoOJB3WE30WNDGLS2VlxgH5IvTj-7gAW8kYN36AwVyHRZNg0PKJwH-qaqhpVUyStO7dSgVIPVmtOY465H8PLGw0zfjldr-tO0" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--BllQFhC2--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh4.googleusercontent.com/-EYWdzKyzneOdqwqTgu1_yCaAg9Gp3bnBG4k5HeoOJB3WE30WNDGLS2VlxgH5IvTj-7gAW8kYN36AwVyHRZNg0PKJwH-qaqhpVUyStO7dSgVIPVmtOY465H8PLGw0zfjldr-tO0" alt="" loading="lazy"></a></p> -->
                     <h6 style="color:black">
                       <a name="finding-helm-charts" href="#finding-helm-charts" class="anchor">
                       </a>
@@ -227,18 +233,18 @@
                     <p>You have the option to create helm charts from scratch. However, there are also prebuilt charts that can be deployed instantly for popular software like PostgreSQL. There, Helm charts are stored and shared using a chart repository.</p>
                     
                     <p><a href="https://artifacthub.io">Artifact Hub</a> is the official distributed community Helm chart repository. For third-party repositories, we need to add the repository to our local environment before we can use it.</p>
-                    <h5 style="color:black">
+                    <h6 style="color:black">
                       <a name="available-postgresql-charts" href="#available-postgresql-charts" class="anchor">
                       </a>
                       Available PostgreSQL charts
-                    </h5>
+                    </h6>
                     
                     <p>First, we have to find a suitable PostgreSQL helm chart for deployment. For that, we can search the Artifact Hub using the following command in the CLI interface.</p>
                     
                     <p><code>helm search hub postgresql</code></p>
                     
-                    <p>RESULT<br>
-                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--zvAsUggT--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh6.googleusercontent.com/Yn4ZxNK6ZgMKzXzpXX1KfJz3ndPS2gWNU5R3ASEJ0jOrLpvuOwtcBCR5ohiqnAc0mUO1Nl52u0sO8qHXG5gy-3xI5G-cdNexOXvc-E6wa0umrUis_yRmYxuaZKlK3g46uF5pioE" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--zvAsUggT--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh6.googleusercontent.com/Yn4ZxNK6ZgMKzXzpXX1KfJz3ndPS2gWNU5R3ASEJ0jOrLpvuOwtcBCR5ohiqnAc0mUO1Nl52u0sO8qHXG5gy-3xI5G-cdNexOXvc-E6wa0umrUis_yRmYxuaZKlK3g46uF5pioE" alt="" loading="lazy"></a></p>
+                    <!-- <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--zvAsUggT--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh6.googleusercontent.com/Yn4ZxNK6ZgMKzXzpXX1KfJz3ndPS2gWNU5R3ASEJ0jOrLpvuOwtcBCR5ohiqnAc0mUO1Nl52u0sO8qHXG5gy-3xI5G-cdNexOXvc-E6wa0umrUis_yRmYxuaZKlK3g46uF5pioE" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--zvAsUggT--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh6.googleusercontent.com/Yn4ZxNK6ZgMKzXzpXX1KfJz3ndPS2gWNU5R3ASEJ0jOrLpvuOwtcBCR5ohiqnAc0mUO1Nl52u0sO8qHXG5gy-3xI5G-cdNexOXvc-E6wa0umrUis_yRmYxuaZKlK3g46uF5pioE" alt="" loading="lazy"></a></p> -->
                     
                     <p>The above command will search for all the available charts in the Artifact Hub for a PostgreSQL chart. The “hub” parameter points to the Artifact Hub.</p>
                     
@@ -247,15 +253,15 @@
                     <p><code>helm repo add bitnami https://charts.bitnami.com/bitnami</code><br><br>
                     <code>helm search repo bitnami</code></p>
                     
-                    <p>RESULT<br>
-                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--TV-kM5ha--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/EfTcEKBh5XMxGjHR0wFau10it1kbr5K2bUlJH_TPuvVz6snYyzn9f4Z5CeVUWyq1t9DagP6Mou8bcGArJkcgp01BFgnfIou490FiM3S6ir8XDPaNz_9UuVb81KW1KxIwQmtd8GY" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--TV-kM5ha--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/EfTcEKBh5XMxGjHR0wFau10it1kbr5K2bUlJH_TPuvVz6snYyzn9f4Z5CeVUWyq1t9DagP6Mou8bcGArJkcgp01BFgnfIou490FiM3S6ir8XDPaNz_9UuVb81KW1KxIwQmtd8GY" alt="" loading="lazy"></a></p>
+                    <!-- <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--TV-kM5ha--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/EfTcEKBh5XMxGjHR0wFau10it1kbr5K2bUlJH_TPuvVz6snYyzn9f4Z5CeVUWyq1t9DagP6Mou8bcGArJkcgp01BFgnfIou490FiM3S6ir8XDPaNz_9UuVb81KW1KxIwQmtd8GY" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--TV-kM5ha--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/EfTcEKBh5XMxGjHR0wFau10it1kbr5K2bUlJH_TPuvVz6snYyzn9f4Z5CeVUWyq1t9DagP6Mou8bcGArJkcgp01BFgnfIou490FiM3S6ir8XDPaNz_9UuVb81KW1KxIwQmtd8GY" alt="" loading="lazy"></a></p> -->
                     
                     <p>In the above search command, we use the parameter “repo” to carry out the search in the newly added repository apart from the artifact hub. Now let’s search for PostgreSQL instances in this repo using the following command.</p>
                     
                     <p><code>helm search repo postgresql</code></p>
                     
-                    <p>RESULT<br>
-                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--OhEIkWP8--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/p96C4iHaDCa8uBhWs7-gL0nmF7aU8suD8xHiRL8aH942pi5nKI5acDKz8vhVw6rHzlsvRu0GDZmry3LXTqmXwb6VJPLEhXZ7vmWW2rvh9ODMPH5Ue_QVeASJRPj0A_PrLGL8egg" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--OhEIkWP8--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/p96C4iHaDCa8uBhWs7-gL0nmF7aU8suD8xHiRL8aH942pi5nKI5acDKz8vhVw6rHzlsvRu0GDZmry3LXTqmXwb6VJPLEhXZ7vmWW2rvh9ODMPH5Ue_QVeASJRPj0A_PrLGL8egg" alt="" loading="lazy"></a></p>
+                    <!-- <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--OhEIkWP8--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/p96C4iHaDCa8uBhWs7-gL0nmF7aU8suD8xHiRL8aH942pi5nKI5acDKz8vhVw6rHzlsvRu0GDZmry3LXTqmXwb6VJPLEhXZ7vmWW2rvh9ODMPH5Ue_QVeASJRPj0A_PrLGL8egg" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--OhEIkWP8--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/p96C4iHaDCa8uBhWs7-gL0nmF7aU8suD8xHiRL8aH942pi5nKI5acDKz8vhVw6rHzlsvRu0GDZmry3LXTqmXwb6VJPLEhXZ7vmWW2rvh9ODMPH5Ue_QVeASJRPj0A_PrLGL8egg" alt="" loading="lazy"></a></p> -->
                     <h6 style="color:black">
                       <a name="installing-helm-charts" href="#installing-helm-charts" class="anchor">
                       </a>
@@ -270,15 +276,15 @@
                     <p>Code<br>
                     <code>helm install postgresql-dev bitnami/postgresql</code></p>
                     
-                    <p>RESULT<br>
-                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--cevjTucf--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/CGubGKLo__04fCiXV52yw5hDiaGxkxNPn_rnahAj7M476PJnNS43CHTz30yx5mx-VdgWysWdiUXqG1qbBwc9EwA33i4zfirqO6v0rDRy5OVJIf2LrwYBGun-fboJRE8uTLJASS0" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--cevjTucf--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/CGubGKLo__04fCiXV52yw5hDiaGxkxNPn_rnahAj7M476PJnNS43CHTz30yx5mx-VdgWysWdiUXqG1qbBwc9EwA33i4zfirqO6v0rDRy5OVJIf2LrwYBGun-fboJRE8uTLJASS0" alt="" loading="lazy"></a></p>
+                    <!-- <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--cevjTucf--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/CGubGKLo__04fCiXV52yw5hDiaGxkxNPn_rnahAj7M476PJnNS43CHTz30yx5mx-VdgWysWdiUXqG1qbBwc9EwA33i4zfirqO6v0rDRy5OVJIf2LrwYBGun-fboJRE8uTLJASS0" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--cevjTucf--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/CGubGKLo__04fCiXV52yw5hDiaGxkxNPn_rnahAj7M476PJnNS43CHTz30yx5mx-VdgWysWdiUXqG1qbBwc9EwA33i4zfirqO6v0rDRy5OVJIf2LrwYBGun-fboJRE8uTLJASS0" alt="" loading="lazy"></a></p> -->
                     
                     <p>Wait till the installation is completed. Then, check the Kubernetes environment, and you will see that a PostgreSQL instance has been deployed successfully.</p>
                     
                     <p><code>kubectl get all</code></p>
                     
-                    <p>RESULT<br>
-                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--kVWjB53q--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh3.googleusercontent.com/KePRg-FqAk82-FBTPJbDeA6cm5LMvPXFcnSi_vfTSie-oPwJ_LX5x7Zex_yrxF0-jU574gspZfph9ljjjnwYH_6q41zGS6mYMauZphrFscNF_Iv7LdGhkG04NklOziFgNgVDMT8" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--kVWjB53q--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh3.googleusercontent.com/KePRg-FqAk82-FBTPJbDeA6cm5LMvPXFcnSi_vfTSie-oPwJ_LX5x7Zex_yrxF0-jU574gspZfph9ljjjnwYH_6q41zGS6mYMauZphrFscNF_Iv7LdGhkG04NklOziFgNgVDMT8" alt="" loading="lazy"></a></p>
+                    <!-- <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--kVWjB53q--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh3.googleusercontent.com/KePRg-FqAk82-FBTPJbDeA6cm5LMvPXFcnSi_vfTSie-oPwJ_LX5x7Zex_yrxF0-jU574gspZfph9ljjjnwYH_6q41zGS6mYMauZphrFscNF_Iv7LdGhkG04NklOziFgNgVDMT8" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--kVWjB53q--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh3.googleusercontent.com/KePRg-FqAk82-FBTPJbDeA6cm5LMvPXFcnSi_vfTSie-oPwJ_LX5x7Zex_yrxF0-jU574gspZfph9ljjjnwYH_6q41zGS6mYMauZphrFscNF_Iv7LdGhkG04NklOziFgNgVDMT8" alt="" loading="lazy"></a></p> -->
                     
                     <p>Now we have deployed a PostgreSQL container. The next step would be to connect to the database, and it can be done using the following commands.</p>
                     
@@ -288,15 +294,15 @@
                     
                     <p><code>kubectl run postgresql-test-client --rm --tty -i --restart='Never' --namespace default --image docker.io/bitnami/postgresql:11.11.0-debian-10-r31 --env="PGPASSWORD=$POSTGRES_PASSWORD" --command -- psql --host postgresql-test -U postgres -d postgres -p 5432</code></p>
                     
-                    <p>RESULT<br>
-                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--lM5XBUdt--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/CNFNeeT9xpoG8GBehHUqa8RI6DtlQiLhzdu7IECib84bnhm26D9wg012EDl3rqm7E1jKHN6_JHRkO2qkggYYuDlfRh-le36HW9ySv5jTmzk0sjy-9kjgineZy09XJM6AHXWKt1Y" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--lM5XBUdt--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/CNFNeeT9xpoG8GBehHUqa8RI6DtlQiLhzdu7IECib84bnhm26D9wg012EDl3rqm7E1jKHN6_JHRkO2qkggYYuDlfRh-le36HW9ySv5jTmzk0sjy-9kjgineZy09XJM6AHXWKt1Y" alt="" loading="lazy"></a></p>
+                    <!-- <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--lM5XBUdt--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/CNFNeeT9xpoG8GBehHUqa8RI6DtlQiLhzdu7IECib84bnhm26D9wg012EDl3rqm7E1jKHN6_JHRkO2qkggYYuDlfRh-le36HW9ySv5jTmzk0sjy-9kjgineZy09XJM6AHXWKt1Y" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--lM5XBUdt--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/CNFNeeT9xpoG8GBehHUqa8RI6DtlQiLhzdu7IECib84bnhm26D9wg012EDl3rqm7E1jKHN6_JHRkO2qkggYYuDlfRh-le36HW9ySv5jTmzk0sjy-9kjgineZy09XJM6AHXWKt1Y" alt="" loading="lazy"></a></p> -->
                     
                     <p>After connecting to the database successfully, we can verify our installation by checking the server version.</p>
-                    <h5 style="color:black">
+                    <h6 style="color:black">
                       <a name="configuration-options" href="#configuration-options" class="anchor">
                       </a>
                       Configuration Options
-                    </h5>
+                    </h6>
                     
                     <p>Depending on the selected helm chart, the available configuration options may differ. The bitnami PostgreSQL chart offers a whole host of options from simple user creation to complex security configurations like setting up certificates and policies. All the available options are listed on the helm chart <a href="https://github.com/bitnami/charts/tree/master/bitnami/postgresql">GitHub page</a>.</p>
                     
@@ -326,15 +332,15 @@
                     
                     
                     
-                    <p>RESULT<br>
-                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--QE9oQ8hd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh3.googleusercontent.com/erZ-DCwhb_z25GDueUNnCvfnErsGmcUl4ZGmxEtE4UJr60wNbw8l6n4TTNrQ0Zx0MrcmLE2rdUUqDDMFD-7AJhnY9bfpIfA_mLL_7z5kTTNkL8G2IfbRt86cRQuxDbLppXzOJfM" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--QE9oQ8hd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh3.googleusercontent.com/erZ-DCwhb_z25GDueUNnCvfnErsGmcUl4ZGmxEtE4UJr60wNbw8l6n4TTNrQ0Zx0MrcmLE2rdUUqDDMFD-7AJhnY9bfpIfA_mLL_7z5kTTNkL8G2IfbRt86cRQuxDbLppXzOJfM" alt="" loading="lazy"></a></p>
+                    <!-- <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--QE9oQ8hd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh3.googleusercontent.com/erZ-DCwhb_z25GDueUNnCvfnErsGmcUl4ZGmxEtE4UJr60wNbw8l6n4TTNrQ0Zx0MrcmLE2rdUUqDDMFD-7AJhnY9bfpIfA_mLL_7z5kTTNkL8G2IfbRt86cRQuxDbLppXzOJfM" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--QE9oQ8hd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh3.googleusercontent.com/erZ-DCwhb_z25GDueUNnCvfnErsGmcUl4ZGmxEtE4UJr60wNbw8l6n4TTNrQ0Zx0MrcmLE2rdUUqDDMFD-7AJhnY9bfpIfA_mLL_7z5kTTNkL8G2IfbRt86cRQuxDbLppXzOJfM" alt="" loading="lazy"></a></p> -->
                     
                     <p>The above output indicates that the new port is configured, and a new user is created. If we export the password for the “testadmin” user, it will return the user-defined password.</p>
                     
                     <p><code>export POSTGRES_PASSWORD=$(kubectl get secret --namespace default postgresql-test01 -o jsonpath="{.data.postgresql-password}" | base64 --decode)</code></p>
                     
-                    <p>RESULT<br>
-                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--p93FJakk--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh6.googleusercontent.com/BH_afvPu7DCofbL7knn0TAO2_HzFx9qom27ZappPU9VjVtwX7bf7OvGwXUHCNYElTlwEmEU7DbG5Jm4oFrsGeLFM9vMl49h2K51COXrD1hiFl7G0H45wla52d6LEm5lRXtmAGPU" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--p93FJakk--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh6.googleusercontent.com/BH_afvPu7DCofbL7knn0TAO2_HzFx9qom27ZappPU9VjVtwX7bf7OvGwXUHCNYElTlwEmEU7DbG5Jm4oFrsGeLFM9vMl49h2K51COXrD1hiFl7G0H45wla52d6LEm5lRXtmAGPU" alt="" loading="lazy"></a></p>
+                    <!-- <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--p93FJakk--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh6.googleusercontent.com/BH_afvPu7DCofbL7knn0TAO2_HzFx9qom27ZappPU9VjVtwX7bf7OvGwXUHCNYElTlwEmEU7DbG5Jm4oFrsGeLFM9vMl49h2K51COXrD1hiFl7G0H45wla52d6LEm5lRXtmAGPU" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--p93FJakk--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh6.googleusercontent.com/BH_afvPu7DCofbL7knn0TAO2_HzFx9qom27ZappPU9VjVtwX7bf7OvGwXUHCNYElTlwEmEU7DbG5Jm4oFrsGeLFM9vMl49h2K51COXrD1hiFl7G0H45wla52d6LEm5lRXtmAGPU" alt="" loading="lazy"></a></p> -->
                     
                     <p>Another common scenario is to configure persistent storage for PostgreSQL deployment. We need to create persistent storage volume before installing the helm chart. The below code block shows how to create a simple storage volume and a volume claim and then attach it to the PostgreSQL deployment.</p>
                     
@@ -410,8 +416,8 @@
                     <code>kubectl apply -f test-pvc.yaml</code><br><br>
                     <code>kubectl get pvc</code></p>
                     
-                    <p>RESULT<br>
-                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--H5cVpvsi--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh6.googleusercontent.com/ZCXODiK24_si0ndYEkaZybmDNdnzXMT-v6O-sPUrBAhRxBxNid9YYcatD772jMRmS9Xnn9kXnItiNTRWHXW9zml8w2rk-J_Cimh_b0-6ZIkynu2-3lTrxl0DtJENjv1nuaS7cF0" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--H5cVpvsi--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh6.googleusercontent.com/ZCXODiK24_si0ndYEkaZybmDNdnzXMT-v6O-sPUrBAhRxBxNid9YYcatD772jMRmS9Xnn9kXnItiNTRWHXW9zml8w2rk-J_Cimh_b0-6ZIkynu2-3lTrxl0DtJENjv1nuaS7cF0" alt="" loading="lazy"></a></p>
+                    <!-- <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--H5cVpvsi--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh6.googleusercontent.com/ZCXODiK24_si0ndYEkaZybmDNdnzXMT-v6O-sPUrBAhRxBxNid9YYcatD772jMRmS9Xnn9kXnItiNTRWHXW9zml8w2rk-J_Cimh_b0-6ZIkynu2-3lTrxl0DtJENjv1nuaS7cF0" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--H5cVpvsi--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh6.googleusercontent.com/ZCXODiK24_si0ndYEkaZybmDNdnzXMT-v6O-sPUrBAhRxBxNid9YYcatD772jMRmS9Xnn9kXnItiNTRWHXW9zml8w2rk-J_Cimh_b0-6ZIkynu2-3lTrxl0DtJENjv1nuaS7cF0" alt="" loading="lazy"></a></p> -->
                     
                     <p>Then, we can attach the persistent volume claim to the helm chart using the following command. We will set the “volumePermissions.enabled” to true for mitigating any permission issues that can occur when writing to the storage volume.<br>
                     </p>
@@ -437,8 +443,8 @@
                     
                     
                     
-                    <p>RESULT<br>
-                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--DZuuk538--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh3.googleusercontent.com/edGbrqBjCGxKhI_AQlVTsWSVUY2k_4cwnTDLPiclKl91-HyqB3uBmcHCgBFJSrgb1zhRhzicYf_-UhIVO38bZZPfxw7uKCZHASPukM03USbMCyPFtXJFWcVt220C7Me0yiqmvZQ" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--DZuuk538--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh3.googleusercontent.com/edGbrqBjCGxKhI_AQlVTsWSVUY2k_4cwnTDLPiclKl91-HyqB3uBmcHCgBFJSrgb1zhRhzicYf_-UhIVO38bZZPfxw7uKCZHASPukM03USbMCyPFtXJFWcVt220C7Me0yiqmvZQ" alt="" loading="lazy"></a></p>
+                    <!-- <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--DZuuk538--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh3.googleusercontent.com/edGbrqBjCGxKhI_AQlVTsWSVUY2k_4cwnTDLPiclKl91-HyqB3uBmcHCgBFJSrgb1zhRhzicYf_-UhIVO38bZZPfxw7uKCZHASPukM03USbMCyPFtXJFWcVt220C7Me0yiqmvZQ" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--DZuuk538--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh3.googleusercontent.com/edGbrqBjCGxKhI_AQlVTsWSVUY2k_4cwnTDLPiclKl91-HyqB3uBmcHCgBFJSrgb1zhRhzicYf_-UhIVO38bZZPfxw7uKCZHASPukM03USbMCyPFtXJFWcVt220C7Me0yiqmvZQ" alt="" loading="lazy"></a></p> -->
                     <h6 style="color:black">
                       <a name="upgrading-helm-chart" href="#upgrading-helm-chart" class="anchor">
                       </a>
@@ -495,8 +501,8 @@
                     
                     
                     
-                    <p>RESULT<br>
-                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s---MoNIEqd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh4.googleusercontent.com/KsjTgWis7XuQ57qEbJ4usyFEjawDwZpe2wnF8rcCpl3YWOPiF8C4lSaGZAGvMcgpDvMribZUI-fmKT3-Sehl4jyLEHCbclLHmPrP9ChZS9wdnk3quPOhRuxsrF6AqXLMOKNoJuQ" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s---MoNIEqd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh4.googleusercontent.com/KsjTgWis7XuQ57qEbJ4usyFEjawDwZpe2wnF8rcCpl3YWOPiF8C4lSaGZAGvMcgpDvMribZUI-fmKT3-Sehl4jyLEHCbclLHmPrP9ChZS9wdnk3quPOhRuxsrF6AqXLMOKNoJuQ" alt="" loading="lazy"></a></p>
+                    <!-- <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s---MoNIEqd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh4.googleusercontent.com/KsjTgWis7XuQ57qEbJ4usyFEjawDwZpe2wnF8rcCpl3YWOPiF8C4lSaGZAGvMcgpDvMribZUI-fmKT3-Sehl4jyLEHCbclLHmPrP9ChZS9wdnk3quPOhRuxsrF6AqXLMOKNoJuQ" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s---MoNIEqd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh4.googleusercontent.com/KsjTgWis7XuQ57qEbJ4usyFEjawDwZpe2wnF8rcCpl3YWOPiF8C4lSaGZAGvMcgpDvMribZUI-fmKT3-Sehl4jyLEHCbclLHmPrP9ChZS9wdnk3quPOhRuxsrF6AqXLMOKNoJuQ" alt="" loading="lazy"></a></p> -->
                     
                     <h6 style="color:black">
                       <a name="deleting-a-helm-chart" href="#deleting-a-helm-chart" class="anchor">
@@ -512,15 +518,15 @@
                     <p>Code<br>
                     <code>helm delete postgresql-test</code></p>
                     
-                    <p>RESULT<br>
+                    <!-- <p>RESULT<br>
                     <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--s5ShSF54--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh4.googleusercontent.com/bsEDYTprWP2MEqKWm209x2g1w4D1ESt9-Mkp_CVfKwUOZz1mIiKdDQCdgid90aiZVOW7W5TzHb98xneVFPN7GW_VZNIK63sb6cs6Y9GT40cAJt4eJKclHCDSgGVWZkPbkowdWRw" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--s5ShSF54--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh4.googleusercontent.com/bsEDYTprWP2MEqKWm209x2g1w4D1ESt9-Mkp_CVfKwUOZz1mIiKdDQCdgid90aiZVOW7W5TzHb98xneVFPN7GW_VZNIK63sb6cs6Y9GT40cAJt4eJKclHCDSgGVWZkPbkowdWRw" alt="" loading="lazy"></a></p>
-                    
+                     -->
                     <p>However, this would not delete any PVC associated with the chart. So we need to delete the unused PVCs manually.<br>
                     <code>kubectl get pvc</code><br><br>
                     <code>kubectl delete pvc data-postgresql-test-postgresql-0</code></p>
                     
-                    <p>RESULT<br>
-                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--HgGiDiT9--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/muuEfjaa2e1ngJf2kBgY6L-7PAlQ--D4904lMu4YHU_3xcLFt3QFTOqsCDJ7685j93LoGZSetwyfZK95-TT6Lx76uKWNrKHHOu59A5DIM9E8XeW5DcRlcZD4t9p7D0WpRDWSX80" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--HgGiDiT9--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/muuEfjaa2e1ngJf2kBgY6L-7PAlQ--D4904lMu4YHU_3xcLFt3QFTOqsCDJ7685j93LoGZSetwyfZK95-TT6Lx76uKWNrKHHOu59A5DIM9E8XeW5DcRlcZD4t9p7D0WpRDWSX80" alt="" loading="lazy"></a></p>
+                    <!-- <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--HgGiDiT9--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/muuEfjaa2e1ngJf2kBgY6L-7PAlQ--D4904lMu4YHU_3xcLFt3QFTOqsCDJ7685j93LoGZSetwyfZK95-TT6Lx76uKWNrKHHOu59A5DIM9E8XeW5DcRlcZD4t9p7D0WpRDWSX80" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--HgGiDiT9--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/muuEfjaa2e1ngJf2kBgY6L-7PAlQ--D4904lMu4YHU_3xcLFt3QFTOqsCDJ7685j93LoGZSetwyfZK95-TT6Lx76uKWNrKHHOu59A5DIM9E8XeW5DcRlcZD4t9p7D0WpRDWSX80" alt="" loading="lazy"></a></p> -->
                     
                     <h6 style="color:black">
                       <a name="conclusion" href="#conclusion" class="anchor">
@@ -574,10 +580,10 @@
                     </ul>
                 </div> -->
                 <!-- Post Comments -->
-                <div class="post-comment">
+                <!-- <div class="post-comment">
                     <div class="section-title bottom_30 top_60"><span></span><p style="color:black"><b>Post Comments</b></p></div>
                     <ul>
-                        <!-- a comment -->
+
                         <li>
                             <div class="row">
                                 <div class="col-md-2 col-sm-2 col-xs-3 person-img">
@@ -591,7 +597,7 @@
                                 </div>
                             </div>
                         </li>
-                        <!-- a comment -->
+
                         <li>
                             <div class="row reply">
                                 <div class="col-md-2 col-sm-2 col-xs-3 person-img">
@@ -605,7 +611,7 @@
                                 </div>
                             </div>
                         </li>
-                        <!-- a comment -->
+
                         <li>
                             <div class="row">
                                 <div class="col-md-2 col-sm-2 col-xs-3 person-img">
@@ -640,12 +646,13 @@
                         </div>
                     </form>   
                 </div>
-            </div> <!-- post end -->
+            </div> -->
+             <!-- post end -->
             <!--Sidebar-->
             <!-- <div class="col-md-4 blog-sidebar">
 
                 <div class="category">
-                    <div class="section-title bottom_15 top_15"><span></span><h5 style="color:black">Categories</h5></div>
+                    <div class="section-title bottom_15 top_15"><span></span><h6 style="color:black">Categories</h6></div>
                     <ul class="category-list">
                         <li><a href="#">Web design</a><span>11</span></li>
                         <li><a href="#">Development</a><span>12</span></li>
@@ -656,7 +663,7 @@
                 </div>
 
                 <div class="post-list">
-                    <div class="section-title bottom_15 top_60"><span></span><h5 style="color:black">Related Posts</h5></div>
+                    <div class="section-title bottom_15 top_60"><span></span><h6 style="color:black">Related Posts</h6></div>
                     <ul>
 
                         <li>
@@ -683,7 +690,7 @@
                 </div>
 
                 <div class="advertisement">
-                    <div class="section-title bottom_30 top_60"><span></span><h5 style="color:black">Advertisement</h5></div>
+                    <div class="section-title bottom_30 top_60"><span></span><h6 style="color:black">Advertisement</h6></div>
 
                     <img src="../images/image.jpg" alt="">    
                 </div>
@@ -715,8 +722,8 @@
 <script src="../js/main.js"></script>
 <!-- for color alternatives -->
 <script src="../js/jquery.cookie-1.4.1.min.js"></script>
-<script src="../js/subpage-demo.js"></script>
-<link rel="stylesheet" href="../css/Demo.min.css" />
+<!-- <script src="../js/subpage-demo.js"></script>
+<link rel="stylesheet" href="../css/Demo.min.css" /> -->
 
 </body>
 
