@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from thetav.online/html/mat/doctor/blog-posts/blog-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Nov 2021 22:43:30 GMT -->
+<head>
+
+<!-- Simple Page Needs
+================================================== -->
+<title>MILAN STEVANOVIĆ</title>
+<meta charset="UTF-8">
+<meta name="description" content="Mat - Resume & vCard HTML Template">
+<meta name="keywords" content="personal, vcard, portfolio">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<!-- Favicon
+================================================== -->  
+<link href="favicon.html" rel="shortcut icon" type="image/x-icon" />
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="../css/bootstrap.css"/>
+<link rel="stylesheet" href="../css/reset.css"/>
+<link rel="stylesheet" href="../cubeportfolio/css/cubeportfolio.min.css"/>
+<link rel="stylesheet" href="../css/style.css"/>
+<link rel="stylesheet" href="../css/colors/blue.css" id="color" />
+    
+<!-- Google Web fonts
+================================================== --> 
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+
+<!-- Font Icons
+================================================== --> 
+<link rel="stylesheet" href="../icon-fonts/font-awesome-4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="../icon-fonts/medical/flaticon.css" />
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+<body>
+ <!-- Preloading -->
+<div id="preloader">
+    <div class="spinner">
+    </div>
+</div>  
+    
+<!-- Wrapper --> 
+<div class="wrapper top_60 container">
+<div class="row">
+        
+<!-- Profile Section
+================================================== --> 
+<div class="col-lg-3 col-md-4">
+    <div class="profile">
+        <div class="profile-name">
+            <span class="name">MILAN STEVANOVIĆ</span><br>
+            <span class="job">Full Stack Developer</span>
+        </div>
+        <figure class="profile-image">
+            <img src="../images/profile.jpg" alt="">
+        </figure>
+        
+            <ul class="profile-information">
+                <li></li>
+                <li><p><span>Name:</span> Milan Stevanović</p></li>
+                <!-- <li><p><span>Birthday:</span> 06 December 1987</p></li> -->
+                <li><p><span>Freelancer:</span> Available</p></li>
+                <li><a href="mailto://milan.stevanovic.ms3@gmail.com" style="text-decoration: none; color:black"><div style="float: left !important;">E-mail:</div><div style="float: left; width:50%; color:gray"> milan.stevanovic.ms3<br>@gmail.com</div><div style="clear: both;"></div></li>
+                <li><a href="https://www.linkedin.com/in/milan-stevan0vic/" style="text-decoration: none; color:black">LinkedIn:<i style="color: gray;"> milan-stevan0vic</a></li>
+                <!-- <li><a href="tel>Phone:</span> +381 64 4351 1 86</p></li> -->
+              </ul>
+
+        <div class="col-md-12">
+            <a class="site-btn icon" href="../Milan.pdf" target="_blank">Download Cv <i class="fa fa-download" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- Page Tab Container Div -->   
+<div id="ajax-tab-container" class="col-lg-9 col-md-8 tab-container">
+    
+<!-- Header
+================================================== --> 
+<div class="row">
+    <header class="col-md-12">
+        <nav>
+            <div class="row">
+                <!-- navigation bar -->
+                <div class="col-md-8 col-sm-8 col-xs-4">
+                    <ul class="tabs">
+                        <li class="tab">
+                            <a class="home-btn" href="../index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="tab"><a href="../index.html#blog">BACK TO BLOG PAGE</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-8 dynamic">
+                    <a href="mailto://milan.stevanovic.ms3@gmail.com" class="pull-right site-btn icon hidden-xs">Hire Me <i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+                    <div class="hamburger pull-right hidden-lg hidden-md"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                    <div class="hidden-md social-icons pull-right"> 
+                        <a class="fb" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                        <a class="tw" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> 
+                        <a class="ins" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+                        <a class="dr" href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a> 
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+</div>   
+<!-- Page Content
+================================================== --> 
+<div id="content" class="panel-container col-md-12">
+  
+    <!-- Blog Page
+    ================================================== --> 
+    <div id="blog-post">
+        <div class="row">
+            <!--Blog Post-->
+            <div class="col-md-12 post">
+                <div class="blog-image">
+                    <img src="../images/blogs/blog-3.jpg" alt="">
+                </div>
+                <div class="post-content">
+                    <h1 class="blog-title bottom_30 top_30">Deploy and Manage PostgreSQL on Kubernetes</h1>
+                    <p>PostgreSQL database is an enterprise-grade, open-source object-relational database system focused on providing a highly scalable and robust platform while conforming to SQL standards. Kubernetes is an open-source container orchestration platform designed to be easily deployable in any environment. It enables users to easily deploy and manage containerized applications.</p>
+
+                    <p>Utilizing Kubernetes to deploy a PostgreSQL instance allows users to leverage the strengths of both platforms. Furthermore, it enables users to create a highly portable and scalable PostgreSQL instance in a Kubernetes cluster. In this article, we will discuss how to easily deploy a PostgreSQL pod in Kubernetes.</p>
+                    
+                    <h6 style="color:black">
+                      <a name="what-options-are-available-to-deploy-postgresql" href="#what-options-are-available-to-deploy-postgresql" class="anchor">
+                      </a>
+                      What options are available to deploy PostgreSQL?
+                    <h6>
+                    
+                    <p>When it comes to deploying PostgreSQL on Kubernetes, there are two options. One is to create a Kubernetes deployment from scratch, and the other is to use a helm chart to carry out the deployment.</p>
+                    
+                    <h5 style="color:black">
+                      <a name="option-01-creating-deployment-configuration-from-scratch" href="#option-01-creating-deployment-configuration-from-scratch" class="anchor">
+                      </a>
+                      Option 01 - Creating deployment configuration from scratch
+                    </h5>
+                    
+                    <p>This option requires the user to set up the ConfigMaps, create and set up persistent storage volumes and then create the PostgreSQL deployment and service. This process involves a higher degree of planning and technical knowledge to get the service up and running. Therefore, only use this option if you have specific requirements that require custom configurations from the ground up.</p>
+                    
+                    <p>Therefore, only use this option if you have specific requirements that require custom configurations such as complex persistent storage configurations, network and security policies, multi cluster connectivity etc...</p>
+                    
+                    <h5 style="color:black">
+                      <a name="option-02-use-a-helm-chart" href="#option-02-use-a-helm-chart" class="anchor">
+                      </a>
+                      Option 02 - Use a helm chart
+                    </h5>
+                    
+                    <p>Helm charts can be considered a type of package that can be used to easily deploy applications to Kubernetes clusters. These charts can be used in any kind of deployment, from a single pod application to complex applications consisting of multiple pods with different software and services.</p>
+                    
+                    <p>In this article, we will focus on using a helm chart to deploy a PostgreSQL instance. Before that, we should know what Helm is and how to configure Helm in a development environment.</p>
+                    
+                    <h5 style="color:black">
+                      <a name="what-is-helm" href="#what-is-helm" class="anchor">
+                      </a>
+                      What is Helm?
+                    </h5>
+                    
+                    <p>Helm is considered as the package manager for Kubernetes. It is an open-source project started with the goal of providing a more efficient way to manage Kubernetes YAML files created when deploying an application.</p>
+                    
+                    <p>Currently, Helm has evolved into a fully-fledged package manager that streamlines the installation, upgrading, dependency management, and configuration of applications on a Kubernetes cluster using simple CLI commands (Helm Client).</p>
+                    
+                    <h6 style="color:black">
+                      <a name="helm-architecture" href="#helm-architecture" class="anchor">
+                      </a>
+                      Helm Architecture
+                    <h6>
+                    
+                    <p>Helm creates packages by creating helm charts that bundle one or more Kubernetes manifests (YAML files). These charts contain all the dependencies of the project and allow users to deploy an application with a single command. Additionally, charts can be versioned so that users can create different configurations for the same helm chart under different versions. </p>
+                    
+                    <h6 style="color:black">
+                      <a name="helm-is-composed-of-three-main-concepts" href="#helm-is-composed-of-three-main-concepts" class="anchor">
+                      </a>
+                      Helm is composed of three main concepts
+                    <h6>
+                    
+                    <ul>
+                    <li>  Chart - Contains Information required to create an application instance in Kubernetes </li>
+                    <li>  Config - Contains the configuration information that can be merged with a chart to create a releasable object.</li>
+                    <li>  Release - A running instance of a chart, combined with a specific config.</li>
+                    </ul>
+                    
+                    <p>Helm executable can be broken down into two components as follows;</p>
+                    
+                    <ul>
+                    <li><p>The Helm Client: A command-line tool used by end-users to create and manage helm charts and interfaces with the Helm library.</p></li>
+                    <li><p>The Helm Library: Interfaces with the Kubernetes API and executes all the helm operations.</p></li>
+                    </ul>
+                    
+                    <p>Both of these are written in the Go programming language. To connect with Kubernetes, Helm utilizes the Kubernetes client library using REST API.</p>
+                    
+                    <h6 style="color:black">
+                      <a name="how-to-install-helm" href="#how-to-install-helm" class="anchor">
+                      </a>
+                      How to Install Helm
+                    <h6>
+                    
+                    <p>Before installing Helm, we need to have a Kubernetes cluster configured and running. It is recommended to use the latest stable release of Kubernetes.</p>
+                    
+                    <p>Installing Helm is a simple process. You can use a package manager like Homebrew for Mac, Chocolatey/Scoop for Windows, or apt/Snap for Debian/Ubuntu. Another way to install Helm is by downloading the <a href="https://github.com/helm/helm/releases/tag/v3.5.3">binary</a> for the related operating system.</p>
+                    
+                    <p>The following example demonstrates how to install Helm using the chocolatey package manager in a windows environment.</p>
+                    
+                    <p><code>choco install kubernetes-helm</code></p>
+                    
+                    <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--5QIIrP2X--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/f-11Tpa0gxoJJpsVvcr1T0NJFg8_QpQjVNH1_lggdIy2NpDktX2LzpzZxvZFLNjKPfOUnWDQsZ9KCVBChEc2cJUEByKci6kc-LgW1THHcXZdW8Q_ESYRlukLvzcaxIH3MT-4MBY" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--5QIIrP2X--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/f-11Tpa0gxoJJpsVvcr1T0NJFg8_QpQjVNH1_lggdIy2NpDktX2LzpzZxvZFLNjKPfOUnWDQsZ9KCVBChEc2cJUEByKci6kc-LgW1THHcXZdW8Q_ESYRlukLvzcaxIH3MT-4MBY" alt="" loading="lazy"></a></p>
+                    
+                    <p>That’s it, and you have completed installing Helm. Next, let’s verify the installation by checking the helm version using the command below.</p>
+                    
+                    <p><code>helm version</code></p>
+                    
+                    <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--BllQFhC2--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh4.googleusercontent.com/-EYWdzKyzneOdqwqTgu1_yCaAg9Gp3bnBG4k5HeoOJB3WE30WNDGLS2VlxgH5IvTj-7gAW8kYN36AwVyHRZNg0PKJwH-qaqhpVUyStO7dSgVIPVmtOY465H8PLGw0zfjldr-tO0" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--BllQFhC2--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh4.googleusercontent.com/-EYWdzKyzneOdqwqTgu1_yCaAg9Gp3bnBG4k5HeoOJB3WE30WNDGLS2VlxgH5IvTj-7gAW8kYN36AwVyHRZNg0PKJwH-qaqhpVUyStO7dSgVIPVmtOY465H8PLGw0zfjldr-tO0" alt="" loading="lazy"></a></p>
+                    <h6 style="color:black">
+                      <a name="finding-helm-charts" href="#finding-helm-charts" class="anchor">
+                      </a>
+                      Finding Helm Charts
+                    <h6>
+                    
+                    <p>You have the option to create helm charts from scratch. However, there are also prebuilt charts that can be deployed instantly for popular software like PostgreSQL. There, Helm charts are stored and shared using a chart repository.</p>
+                    
+                    <p><a href="https://artifacthub.io">Artifact Hub</a> is the official distributed community Helm chart repository. For third-party repositories, we need to add the repository to our local environment before we can use it.</p>
+                    <h5 style="color:black">
+                      <a name="available-postgresql-charts" href="#available-postgresql-charts" class="anchor">
+                      </a>
+                      Available PostgreSQL charts
+                    </h5>
+                    
+                    <p>First, we have to find a suitable PostgreSQL helm chart for deployment. For that, we can search the Artifact Hub using the following command in the CLI interface.</p>
+                    
+                    <p><code>helm search hub postgresql</code></p>
+                    
+                    <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--zvAsUggT--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh6.googleusercontent.com/Yn4ZxNK6ZgMKzXzpXX1KfJz3ndPS2gWNU5R3ASEJ0jOrLpvuOwtcBCR5ohiqnAc0mUO1Nl52u0sO8qHXG5gy-3xI5G-cdNexOXvc-E6wa0umrUis_yRmYxuaZKlK3g46uF5pioE" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--zvAsUggT--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh6.googleusercontent.com/Yn4ZxNK6ZgMKzXzpXX1KfJz3ndPS2gWNU5R3ASEJ0jOrLpvuOwtcBCR5ohiqnAc0mUO1Nl52u0sO8qHXG5gy-3xI5G-cdNexOXvc-E6wa0umrUis_yRmYxuaZKlK3g46uF5pioE" alt="" loading="lazy"></a></p>
+                    
+                    <p>The above command will search for all the available charts in the Artifact Hub for a PostgreSQL chart. The “hub” parameter points to the Artifact Hub.</p>
+                    
+                    <p>To search in a third-party repository, first, we need to add the repository to our helm installation. It can be done through the “repo add” command. The following example shows how to add the bitnami repository to our helm installation and search for the repository.</p>
+                    
+                    <p><code>helm repo add bitnami https://charts.bitnami.com/bitnami</code><br><br>
+                    <code>helm search repo bitnami</code></p>
+                    
+                    <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--TV-kM5ha--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/EfTcEKBh5XMxGjHR0wFau10it1kbr5K2bUlJH_TPuvVz6snYyzn9f4Z5CeVUWyq1t9DagP6Mou8bcGArJkcgp01BFgnfIou490FiM3S6ir8XDPaNz_9UuVb81KW1KxIwQmtd8GY" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--TV-kM5ha--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/EfTcEKBh5XMxGjHR0wFau10it1kbr5K2bUlJH_TPuvVz6snYyzn9f4Z5CeVUWyq1t9DagP6Mou8bcGArJkcgp01BFgnfIou490FiM3S6ir8XDPaNz_9UuVb81KW1KxIwQmtd8GY" alt="" loading="lazy"></a></p>
+                    
+                    <p>In the above search command, we use the parameter “repo” to carry out the search in the newly added repository apart from the artifact hub. Now let’s search for PostgreSQL instances in this repo using the following command.</p>
+                    
+                    <p><code>helm search repo postgresql</code></p>
+                    
+                    <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--OhEIkWP8--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/p96C4iHaDCa8uBhWs7-gL0nmF7aU8suD8xHiRL8aH942pi5nKI5acDKz8vhVw6rHzlsvRu0GDZmry3LXTqmXwb6VJPLEhXZ7vmWW2rvh9ODMPH5Ue_QVeASJRPj0A_PrLGL8egg" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--OhEIkWP8--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/p96C4iHaDCa8uBhWs7-gL0nmF7aU8suD8xHiRL8aH942pi5nKI5acDKz8vhVw6rHzlsvRu0GDZmry3LXTqmXwb6VJPLEhXZ7vmWW2rvh9ODMPH5Ue_QVeASJRPj0A_PrLGL8egg" alt="" loading="lazy"></a></p>
+                    <h6 style="color:black">
+                      <a name="installing-helm-charts" href="#installing-helm-charts" class="anchor">
+                      </a>
+                      Installing Helm Charts
+                    <h6>
+                    
+                    <p>By now, we have located a helm chart, and the next step would be to install the chart using the “helm install command,” as shown below.</p>
+                    
+                    <p>Syntax<br>
+                    <code>helm install &lt;Pod Name&gt;  &lt;Chart Name&gt;</code></p>
+                    
+                    <p>Code<br>
+                    <code>helm install postgresql-dev bitnami/postgresql</code></p>
+                    
+                    <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--cevjTucf--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/CGubGKLo__04fCiXV52yw5hDiaGxkxNPn_rnahAj7M476PJnNS43CHTz30yx5mx-VdgWysWdiUXqG1qbBwc9EwA33i4zfirqO6v0rDRy5OVJIf2LrwYBGun-fboJRE8uTLJASS0" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--cevjTucf--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/CGubGKLo__04fCiXV52yw5hDiaGxkxNPn_rnahAj7M476PJnNS43CHTz30yx5mx-VdgWysWdiUXqG1qbBwc9EwA33i4zfirqO6v0rDRy5OVJIf2LrwYBGun-fboJRE8uTLJASS0" alt="" loading="lazy"></a></p>
+                    
+                    <p>Wait till the installation is completed. Then, check the Kubernetes environment, and you will see that a PostgreSQL instance has been deployed successfully.</p>
+                    
+                    <p><code>kubectl get all</code></p>
+                    
+                    <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--kVWjB53q--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh3.googleusercontent.com/KePRg-FqAk82-FBTPJbDeA6cm5LMvPXFcnSi_vfTSie-oPwJ_LX5x7Zex_yrxF0-jU574gspZfph9ljjjnwYH_6q41zGS6mYMauZphrFscNF_Iv7LdGhkG04NklOziFgNgVDMT8" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--kVWjB53q--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh3.googleusercontent.com/KePRg-FqAk82-FBTPJbDeA6cm5LMvPXFcnSi_vfTSie-oPwJ_LX5x7Zex_yrxF0-jU574gspZfph9ljjjnwYH_6q41zGS6mYMauZphrFscNF_Iv7LdGhkG04NklOziFgNgVDMT8" alt="" loading="lazy"></a></p>
+                    
+                    <p>Now we have deployed a PostgreSQL container. The next step would be to connect to the database, and it can be done using the following commands.</p>
+                    
+                    <p>We need to extract the password of the instance and save it as an environmental variable. That password will be used to create the connection.</p>
+                    
+                    <p><code>export POSTGRES_PASSWORD=$(kubectl get secret --namespace default postgresql-test -o jsonpath="{.data.postgresql-password}" | base64 --decode)</code></p>
+                    
+                    <p><code>kubectl run postgresql-test-client --rm --tty -i --restart='Never' --namespace default --image docker.io/bitnami/postgresql:11.11.0-debian-10-r31 --env="PGPASSWORD=$POSTGRES_PASSWORD" --command -- psql --host postgresql-test -U postgres -d postgres -p 5432</code></p>
+                    
+                    <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--lM5XBUdt--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/CNFNeeT9xpoG8GBehHUqa8RI6DtlQiLhzdu7IECib84bnhm26D9wg012EDl3rqm7E1jKHN6_JHRkO2qkggYYuDlfRh-le36HW9ySv5jTmzk0sjy-9kjgineZy09XJM6AHXWKt1Y" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--lM5XBUdt--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/CNFNeeT9xpoG8GBehHUqa8RI6DtlQiLhzdu7IECib84bnhm26D9wg012EDl3rqm7E1jKHN6_JHRkO2qkggYYuDlfRh-le36HW9ySv5jTmzk0sjy-9kjgineZy09XJM6AHXWKt1Y" alt="" loading="lazy"></a></p>
+                    
+                    <p>After connecting to the database successfully, we can verify our installation by checking the server version.</p>
+                    <h5 style="color:black">
+                      <a name="configuration-options" href="#configuration-options" class="anchor">
+                      </a>
+                      Configuration Options
+                    </h5>
+                    
+                    <p>Depending on the selected helm chart, the available configuration options may differ. The bitnami PostgreSQL chart offers a whole host of options from simple user creation to complex security configurations like setting up certificates and policies. All the available options are listed on the helm chart <a href="https://github.com/bitnami/charts/tree/master/bitnami/postgresql">GitHub page</a>.</p>
+                    
+                    <p>Let's look at some common options, such as changing the username, password, database name, and port. This can be done by providing the following parameters while installing the helm chart.<br>
+                    </p>
+                    
+                    <div class="highlight js-code-highlight">
+                    <pre class="highlight plaintext"><code>helm install postgresql-test01 bitnami/postgresql --set
+                    global.postgresql.postgresqlUsername=testadmin --set
+                    global.postgresql.postgresqlPassword=testadmin123 --set
+                    global.postgresql.postgresqlDatabase=testdb --set
+                    global.postgresql.servicePort=5555
+                    </code></pre>
+                    <div class="highlight__panel js-actions-panel">
+                    <div class="highlight__panel-action js-fullscreen-code-action">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                    </svg>
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                    </svg> -->
+                    
+                    </div>
+                    </div>
+                    </div>
+                    
+                    
+                    
+                    <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--QE9oQ8hd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh3.googleusercontent.com/erZ-DCwhb_z25GDueUNnCvfnErsGmcUl4ZGmxEtE4UJr60wNbw8l6n4TTNrQ0Zx0MrcmLE2rdUUqDDMFD-7AJhnY9bfpIfA_mLL_7z5kTTNkL8G2IfbRt86cRQuxDbLppXzOJfM" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--QE9oQ8hd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh3.googleusercontent.com/erZ-DCwhb_z25GDueUNnCvfnErsGmcUl4ZGmxEtE4UJr60wNbw8l6n4TTNrQ0Zx0MrcmLE2rdUUqDDMFD-7AJhnY9bfpIfA_mLL_7z5kTTNkL8G2IfbRt86cRQuxDbLppXzOJfM" alt="" loading="lazy"></a></p>
+                    
+                    <p>The above output indicates that the new port is configured, and a new user is created. If we export the password for the “testadmin” user, it will return the user-defined password.</p>
+                    
+                    <p><code>export POSTGRES_PASSWORD=$(kubectl get secret --namespace default postgresql-test01 -o jsonpath="{.data.postgresql-password}" | base64 --decode)</code></p>
+                    
+                    <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--p93FJakk--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh6.googleusercontent.com/BH_afvPu7DCofbL7knn0TAO2_HzFx9qom27ZappPU9VjVtwX7bf7OvGwXUHCNYElTlwEmEU7DbG5Jm4oFrsGeLFM9vMl49h2K51COXrD1hiFl7G0H45wla52d6LEm5lRXtmAGPU" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--p93FJakk--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh6.googleusercontent.com/BH_afvPu7DCofbL7knn0TAO2_HzFx9qom27ZappPU9VjVtwX7bf7OvGwXUHCNYElTlwEmEU7DbG5Jm4oFrsGeLFM9vMl49h2K51COXrD1hiFl7G0H45wla52d6LEm5lRXtmAGPU" alt="" loading="lazy"></a></p>
+                    
+                    <p>Another common scenario is to configure persistent storage for PostgreSQL deployment. We need to create persistent storage volume before installing the helm chart. The below code block shows how to create a simple storage volume and a volume claim and then attach it to the PostgreSQL deployment.</p>
+                    
+                    <p>test-pv.yaml<br>
+                    </p>
+                    
+                    <div class="highlight js-code-highlight">
+                    <pre class="highlight plaintext"><code>apiVersion: v1
+                    kind: PersistentVolume
+                    metadata:
+                      name: postgresql-pv
+                      labels:
+                        type: local
+                    spec:
+                      storageClassName: manual
+                      capacity:
+                        storage: 10Gi
+                      accessModes:
+                        - ReadWriteOnce
+                      hostPath:
+                        path: "/mnt/data"
+                    </code></pre>
+                    <div class="highlight__panel js-actions-panel">
+                    <div class="highlight__panel-action js-fullscreen-code-action">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                    </svg>
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                    </svg>
+                     -->
+                    </div>
+                    </div>
+                    </div>
+                    
+                    
+                    
+                    <p>test-pvc.yaml<br>
+                    </p>
+                    
+                    <div class="highlight js-code-highlight">
+                    <pre class="highlight plaintext"><code>apiVersion: v1
+                    kind: PersistentVolumeClaim
+                    metadata:
+                      name: postgresql-pv-claim
+                    spec:
+                      storageClassName: manual
+                      accessModes:
+                        - ReadWriteOnce
+                      resources:
+                        requests:
+                          storage: 10Gi
+                    </code></pre>
+                    <div class="highlight__panel js-actions-panel">
+                    <div class="highlight__panel-action js-fullscreen-code-action">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                    </svg>
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                    </svg> -->
+                    
+                    </div>
+                    </div>
+                    </div>
+                    
+                    
+                    
+                    <p>Create the volume and claim<br>
+                    <code>kubectl apply -f test-pv.yaml</code><br>
+                    <code>kubectl apply -f test-pvc.yaml</code><br><br>
+                    <code>kubectl get pvc</code></p>
+                    
+                    <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--H5cVpvsi--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh6.googleusercontent.com/ZCXODiK24_si0ndYEkaZybmDNdnzXMT-v6O-sPUrBAhRxBxNid9YYcatD772jMRmS9Xnn9kXnItiNTRWHXW9zml8w2rk-J_Cimh_b0-6ZIkynu2-3lTrxl0DtJENjv1nuaS7cF0" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--H5cVpvsi--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh6.googleusercontent.com/ZCXODiK24_si0ndYEkaZybmDNdnzXMT-v6O-sPUrBAhRxBxNid9YYcatD772jMRmS9Xnn9kXnItiNTRWHXW9zml8w2rk-J_Cimh_b0-6ZIkynu2-3lTrxl0DtJENjv1nuaS7cF0" alt="" loading="lazy"></a></p>
+                    
+                    <p>Then, we can attach the persistent volume claim to the helm chart using the following command. We will set the “volumePermissions.enabled” to true for mitigating any permission issues that can occur when writing to the storage volume.<br>
+                    </p>
+                    
+                    <div class="highlight js-code-highlight">
+                    <pre class="highlight plaintext"><code>helm install postgresql-test02 bitnami/postgresql --set
+                    persistence.existingClaim=postgresql-pv-claim --set
+                    volumePermissions.enabled=true
+                    </code></pre>
+                    <div class="highlight__panel js-actions-panel">
+                    <div class="highlight__panel-action js-fullscreen-code-action">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                    </svg>
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                    </svg> -->
+                    
+                    </div>
+                    </div>
+                    </div>
+                    
+                    
+                    
+                    <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--DZuuk538--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh3.googleusercontent.com/edGbrqBjCGxKhI_AQlVTsWSVUY2k_4cwnTDLPiclKl91-HyqB3uBmcHCgBFJSrgb1zhRhzicYf_-UhIVO38bZZPfxw7uKCZHASPukM03USbMCyPFtXJFWcVt220C7Me0yiqmvZQ" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--DZuuk538--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh3.googleusercontent.com/edGbrqBjCGxKhI_AQlVTsWSVUY2k_4cwnTDLPiclKl91-HyqB3uBmcHCgBFJSrgb1zhRhzicYf_-UhIVO38bZZPfxw7uKCZHASPukM03USbMCyPFtXJFWcVt220C7Me0yiqmvZQ" alt="" loading="lazy"></a></p>
+                    <h6 style="color:black">
+                      <a name="upgrading-helm-chart" href="#upgrading-helm-chart" class="anchor">
+                      </a>
+                      Upgrading Helm Chart
+                    <h6>
+                    
+                    <p>When upgrading the PostgreSQL helm, it is essential to provide the existing postgresqlPassword and replication.password parameters. It will ensure these values are not updated with random details, which will lead to an inaccessible database.</p>
+                    
+                    <p>Syntax<br>
+                    </p>
+                    
+                    <div class="highlight js-code-highlight">
+                    <pre class="highlight plaintext"><code>helm upgrade &lt;Pod Name&gt;  &lt;Chart Name&gt; --set
+                    postgresqlPassword=&lt;POSTGRESQL_PASSWORD&gt; --set
+                    replication.password=&lt;REPLICATION_PASSWORD&gt;
+                    </code></pre>
+                    <div class="highlight__panel js-actions-panel">
+                    <div class="highlight__panel-action js-fullscreen-code-action">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                    </svg>
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                    </svg> -->
+                    
+                    </div>
+                    </div>
+                    </div>
+                    
+                    
+                    
+                    <p>Code<br>
+                    </p>
+                    
+                    <div class="highlight js-code-highlight">
+                    <pre class="highlight plaintext"><code>helm upgrade postgresql-test bitnami/postgresql --set
+                    postgresqlPassword=testadmin123 --set
+                    replication.password=12345
+                    </code></pre>
+                    <div class="highlight__panel js-actions-panel">
+                    <div class="highlight__panel-action js-fullscreen-code-action">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                    </svg>
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                    </svg> -->
+                    
+                    </div>
+                    </div>
+                    </div>
+                    
+                    
+                    
+                    <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s---MoNIEqd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh4.googleusercontent.com/KsjTgWis7XuQ57qEbJ4usyFEjawDwZpe2wnF8rcCpl3YWOPiF8C4lSaGZAGvMcgpDvMribZUI-fmKT3-Sehl4jyLEHCbclLHmPrP9ChZS9wdnk3quPOhRuxsrF6AqXLMOKNoJuQ" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s---MoNIEqd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh4.googleusercontent.com/KsjTgWis7XuQ57qEbJ4usyFEjawDwZpe2wnF8rcCpl3YWOPiF8C4lSaGZAGvMcgpDvMribZUI-fmKT3-Sehl4jyLEHCbclLHmPrP9ChZS9wdnk3quPOhRuxsrF6AqXLMOKNoJuQ" alt="" loading="lazy"></a></p>
+                    
+                    <h6 style="color:black">
+                      <a name="deleting-a-helm-chart" href="#deleting-a-helm-chart" class="anchor">
+                      </a>
+                      Deleting a Helm Chart
+                    <h6>
+                    
+                    <p>We can simply delete a helm chart by providing the chart name with the delete command, as shown below.</p>
+                    
+                    <p>Syntax<br>
+                    <code>helm delete &lt;Chart Name&gt;</code></p>
+                    
+                    <p>Code<br>
+                    <code>helm delete postgresql-test</code></p>
+                    
+                    <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--s5ShSF54--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh4.googleusercontent.com/bsEDYTprWP2MEqKWm209x2g1w4D1ESt9-Mkp_CVfKwUOZz1mIiKdDQCdgid90aiZVOW7W5TzHb98xneVFPN7GW_VZNIK63sb6cs6Y9GT40cAJt4eJKclHCDSgGVWZkPbkowdWRw" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--s5ShSF54--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh4.googleusercontent.com/bsEDYTprWP2MEqKWm209x2g1w4D1ESt9-Mkp_CVfKwUOZz1mIiKdDQCdgid90aiZVOW7W5TzHb98xneVFPN7GW_VZNIK63sb6cs6Y9GT40cAJt4eJKclHCDSgGVWZkPbkowdWRw" alt="" loading="lazy"></a></p>
+                    
+                    <p>However, this would not delete any PVC associated with the chart. So we need to delete the unused PVCs manually.<br>
+                    <code>kubectl get pvc</code><br><br>
+                    <code>kubectl delete pvc data-postgresql-test-postgresql-0</code></p>
+                    
+                    <p>RESULT<br>
+                    <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--HgGiDiT9--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/muuEfjaa2e1ngJf2kBgY6L-7PAlQ--D4904lMu4YHU_3xcLFt3QFTOqsCDJ7685j93LoGZSetwyfZK95-TT6Lx76uKWNrKHHOu59A5DIM9E8XeW5DcRlcZD4t9p7D0WpRDWSX80" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--HgGiDiT9--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://lh5.googleusercontent.com/muuEfjaa2e1ngJf2kBgY6L-7PAlQ--D4904lMu4YHU_3xcLFt3QFTOqsCDJ7685j93LoGZSetwyfZK95-TT6Lx76uKWNrKHHOu59A5DIM9E8XeW5DcRlcZD4t9p7D0WpRDWSX80" alt="" loading="lazy"></a></p>
+                    
+                    <h6 style="color:black">
+                      <a name="conclusion" href="#conclusion" class="anchor">
+                      </a>
+                      Conclusion
+                    <h6>
+                    
+                    <p>In this article, we learned how to deploy a PostgreSQL database in a Kubernetes cluster using a helm chart, change the configurations, and upgrade and delete the PostgreSQL chart. Using helm charts is a relatively straightforward method to deploy commonly used applications in a Kubernetes cluster. This frees up the users to concentrate on the development of the database without having to create complex Kubernetes configurations.</p>    
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                    </svg>
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                    </svg> -->
+                </div>
+                <!-- <div class="tags top_30">
+                    <span>Tags:</span>
+                    <a href="#">web,</a>
+                    <a href="#">Angular,</a>
+                    <a href="#">design,</a>
+                    <a href="#">Typescript,</a>
+                    <a href="#">JavaScript,</a>
+                    <a href="#">AngularJs</a>
+                </div> -->
+                <!-- Related Post -->
+                <!-- <div class="post-list">
+                    <div class="section-title bottom_15 top_60"><span></span><p style="color:black"><b>Related Posts</p></div>
+                    <ul>
+
+                        <li>
+                            <a href="#">
+                                <div class="info">Web Design <span>April 14, 17</span></div>
+                                <p class="little-text">Gregor then turned to look out the window at the dull weather</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="info">Photography <span>April 14, 17</span></div>
+                                <p class="little-text">Doing business like this takes much more effort than doing your own business at home</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="info">Development <span>April 14, 17</span></div>
+                                <p class="little-text">Ask especially collecting terminated may son expression extremely!</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div> -->
+                <!-- Post Comments -->
+                <div class="post-comment">
+                    <div class="section-title bottom_30 top_60"><span></span><p style="color:black"><b>Post Comments</b></p></div>
+                    <ul>
+                        <!-- a comment -->
+                        <li>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2 col-xs-3 person-img">
+                                    <img src="../images/person.jpg" alt="">
+                                </div>
+                                <div class="col-md-10 col-sm-10 col-xs-9 comment-content">
+                                    <div class="name">Charles A. Bullock</div> 
+                                    <span class="date">Aug 26, 2021</span>   
+                                    <p>He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs.</p>
+                                    <a href="#"><i class="fa fa-reply" aria-hidden="true"></i>Reply</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- a comment -->
+                        <li>
+                            <div class="row reply">
+                                <div class="col-md-2 col-sm-2 col-xs-3 person-img">
+                                    <img src="../images/person.jpg" alt="">
+                                </div>
+                                <div class="col-md-10 col-sm-10 col-xs-9 comment-content">
+                                    <div class="name">Craig E. Smith</div> 
+                                    <span class="date">Aug 23, 2021</span>   
+                                    <p>He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs.</p>
+                                    <a href="#"><i class="fa fa-reply" aria-hidden="true"></i>Reply</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- a comment -->
+                        <li>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2 col-xs-3 person-img">
+                                    <img src="../images/person.jpg" alt="">
+                                </div>
+                                <div class="col-md-10 col-sm-10 col-xs-9 comment-content">
+                                    <div class="name">Javier D. Phillips</div> 
+                                    <span class="date">Aug 26, 2021</span>   
+                                    <p>He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs.</p>
+                                    <a href="#"><i class="fa fa-reply" aria-hidden="true"></i>Reply</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>   
+                </div>
+                <div class="leave-comment">
+                    <div class="section-title bottom_30 top_60"><span></span><p style="color:black"><b>Leave a Comment</b></p></div>
+                    <form class="site-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input class="site-input" type="input" name="" placeholder="Name">
+                            </div>
+                            <div class="col-md-6">
+                                <input class="site-input" type="input" name="" placeholder="E-mail">
+                            </div>
+                            <div class="col-md-12">
+                                <textarea class="site-area" placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-md-12 top_15 bottom_30">
+                                <button class="site-btn" type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>   
+                </div>
+            </div> <!-- post end -->
+            <!--Sidebar-->
+            <!-- <div class="col-md-4 blog-sidebar">
+
+                <div class="category">
+                    <div class="section-title bottom_15 top_15"><span></span><h5 style="color:black">Categories</h5></div>
+                    <ul class="category-list">
+                        <li><a href="#">Web design</a><span>11</span></li>
+                        <li><a href="#">Development</a><span>12</span></li>
+                        <li><a href="#">Photography</a><span>16</span></li>
+                        <li><a href="#">Branding</a><span>16</span></li>
+                        <li><a href="#">Other</a><span>16</span></li>
+                    </ul>
+                </div>
+
+                <div class="post-list">
+                    <div class="section-title bottom_15 top_60"><span></span><h5 style="color:black">Related Posts</h5></div>
+                    <ul>
+
+                        <li>
+                            <a href="#">
+                                <div class="info">Development <span>Oct 21, 17</span></div>
+                                <p class="little-text">How to vertically center a div for all browsers?</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="info">Web Design <span>April 14, 17</span></div>
+                                <p class="little-text">How to convert a Sketch design file into a layered Photoshop file</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="info">Web Design <span>Mar 18, 17</span></div>
+                                <p class="little-text">The Bookmarkable Photoshop Tutorial for Beginners</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="advertisement">
+                    <div class="section-title bottom_30 top_60"><span></span><h5 style="color:black">Advertisement</h5></div>
+
+                    <img src="../images/image.jpg" alt="">    
+                </div>
+            </div>  -->
+        </div>
+    </div>
+    
+</div><!-- Content - End -->
+ 
+<!-- Footer
+================================================== -->
+<footer>
+    <div class="footer col-md-12 top_30 bottom_30">
+        <div class="name col-md-4 hidden-md hidden-sm hidden-xs">MILAN STEVANOVIĆ.</div>
+        <div class="copyright col-lg-8 col-md-12">© 2021 All rights reserved. Designed by <a href="https://themeforest.net/user/tavonline">tavonline</a> </div>
+    </div>
+</footer>
+    
+</div> <!-- Tab Container - End -->
+</div> <!-- Row - End --> 
+</div> <!-- Wrapper - End -->   
+
+<!-- Javascripts
+================================================== -->  
+<script src="../js/jquery-2.1.4.min.js"></script> 
+<script src="../cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+<script src="../js/bootstrap.min.js"></script> 
+<script src="../js/jquery.easytabs.min.js"></script>
+<script src="../js/main.js"></script>
+<!-- for color alternatives -->
+<script src="../js/jquery.cookie-1.4.1.min.js"></script>
+<script src="../js/subpage-demo.js"></script>
+<link rel="stylesheet" href="../css/Demo.min.css" />
+
+</body>
+
+<!-- Mirrored from thetav.online/html/mat/doctor/blog-posts/blog-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Nov 2021 22:43:32 GMT -->
+</html>

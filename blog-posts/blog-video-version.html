@@ -1,0 +1,709 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from thetav.online/html/mat/doctor/blog-posts/blog-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Nov 2021 22:43:30 GMT -->
+<head>
+
+<!-- Simple Page Needs
+================================================== -->
+<title>MILAN STEVANOVIĆ</title>
+<meta charset="UTF-8">
+<meta name="description" content="Mat - Resume & vCard HTML Template">
+<meta name="keywords" content="personal, vcard, portfolio">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<!-- Favicon
+================================================== -->  
+<link href="favicon.html" rel="shortcut icon" type="image/x-icon" />
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="../css/bootstrap.css"/>
+<link rel="stylesheet" href="../css/reset.css"/>
+<link rel="stylesheet" href="../cubeportfolio/css/cubeportfolio.min.css"/>
+<link rel="stylesheet" href="../css/style.css"/>
+<link rel="stylesheet" href="../css/colors/blue.css" id="color" />
+    
+<!-- Google Web fonts
+================================================== --> 
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+
+<!-- Font Icons
+================================================== --> 
+<link rel="stylesheet" href="../icon-fonts/font-awesome-4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="../icon-fonts/medical/flaticon.css" />
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+<body>
+ <!-- Preloading -->
+<div id="preloader">
+    <div class="spinner">
+    </div>
+</div>  
+    
+<!-- Wrapper --> 
+<div class="wrapper top_60 container">
+<div class="row">
+        
+<!-- Profile Section
+================================================== --> 
+<div class="col-lg-3 col-md-4">
+    <div class="profile">
+        <div class="profile-name">
+            <span class="name">MILAN STEVANOVIĆ</span><br>
+            <span class="job">Full Stack Developer</span>
+        </div>
+        <figure class="profile-image">
+            <img src="../images/profile.jpg" alt="">
+        </figure>
+        
+            <ul class="profile-information">
+                <li></li>
+                <li><p><span>Name:</span> Milan Stevanović</p></li>
+                <!-- <li><p><span>Birthday:</span> 06 December 1987</p></li> -->
+                <li><p><span>Freelancer:</span> Available</p></li>
+                <li><a href="mailto://milan.stevanovic.ms3@gmail.com" style="text-decoration: none; color:black"><div style="float: left !important;">E-mail:</div><div style="float: left; width:50%; color:gray"> milan.stevanovic.ms3<br>@gmail.com</div><div style="clear: both;"></div></li>
+                <li><a href="https://www.linkedin.com/in/milan-stevan0vic/" style="text-decoration: none; color:black">LinkedIn:<i style="color: gray;"> milan-stevan0vic</a></li>
+                <!-- <li><a href="tel>Phone:</span> +381 64 4351 1 86</p></li> -->
+              </ul>
+
+        <div class="col-md-12">
+            <a class="site-btn icon" href="../Milan.pdf" target="_blank">Download Cv <i class="fa fa-download" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- Page Tab Container Div -->   
+<div id="ajax-tab-container" class="col-lg-9 col-md-8 tab-container">
+    
+<!-- Header
+================================================== --> 
+<div class="row">
+    <header class="col-md-12">
+        <nav>
+            <div class="row">
+                <!-- navigation bar -->
+                <div class="col-md-8 col-sm-8 col-xs-4">
+                    <ul class="tabs">
+                        <li class="tab">
+                            <a class="home-btn" href="../index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="tab"><a href="../index.html#blog">BACK TO BLOG PAGE</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-8 dynamic">
+                    <a href="mailto://milan.stevanovic.ms3@gmail.com" class="pull-right site-btn icon hidden-xs">Hire Me <i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+                    <div class="hamburger pull-right hidden-lg hidden-md"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                    <div class="hidden-md social-icons pull-right"> 
+                        <a class="fb" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                        <a class="tw" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> 
+                        <a class="ins" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+                        <a class="dr" href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a> 
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+</div>   
+<!-- Page Content
+================================================== --> 
+<div id="content" class="panel-container col-md-12">
+  
+    <!-- Blog Page
+    ================================================== --> 
+    <div id="blog-post">
+        <div class="row">
+            <!--Blog Post-->
+            <div class="col-md-12 post">
+                <div class="blog-image">
+                    <img src="../images/blogs/blog-2.jpg" alt="">
+                </div>
+                <div class="post-content">
+                    <h1 class="blog-title bottom_30 top_30">React 16.0—16.6 new features for every day use</h1>
+                    <p>This is a short cheat sheet for developers migrating from React 15 to React 16, or from earlier 16.x versions to 16.6. It focuses on features you’ll use often.</p>
+
+                    <h6 style="color:black;">
+                      <a name="returning-multiple-elements-from-components-with-fragments" href="#returning-multiple-elements-from-components-with-fragments" class="anchor">
+                      </a>
+                      Returning multiple elements from components with fragments
+                    </h6>
+                    
+                    <p>Splitting UI into small reusable components may lead to creation of unnecessary DOM elements, like when you need to return multiple elements from a component. React 16 has several options to avoid that:<br>
+                    </p>
+                    
+                    <div class="highlight js-code-highlight">
+                    <pre class="highlight javascript"><code><span class="c1">// React 15: extra wrapper element</span>
+                    <span class="kd">const</span> <span class="nx">Breakfast</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">(</span>
+                      <span class="o">&lt;</span><span class="nx">ul</span><span class="o">&gt;</span>
+                        <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;</span><span class="nx">Coffee</span><span class="o">&lt;</span><span class="sr">/li</span><span class="err">&gt;
+                    </span>    <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;</span><span class="nx">Croissant</span><span class="o">&lt;</span><span class="sr">/li</span><span class="err">&gt;
+                    </span>    <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;</span><span class="nx">Marmalade</span><span class="o">&lt;</span><span class="sr">/li</span><span class="err">&gt;
+                    </span>  <span class="o">&lt;</span><span class="sr">/ul</span><span class="err">&gt;
+                    </span><span class="p">);</span>
+                    
+                    <span class="c1">// React 16.0: array (note that keys are required)</span>
+                    <span class="kd">const</span> <span class="nx">Breakfast</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">[</span>
+                      <span class="o">&lt;</span><span class="nx">li</span> <span class="nx">key</span><span class="o">=</span><span class="dl">"</span><span class="s2">coffee</span><span class="dl">"</span><span class="o">&gt;</span><span class="nx">Coffee</span><span class="o">&lt;</span><span class="sr">/li&gt;</span><span class="err">,
+                    </span>  <span class="o">&lt;</span><span class="nx">li</span> <span class="nx">key</span><span class="o">=</span><span class="dl">"</span><span class="s2">croissant</span><span class="dl">"</span><span class="o">&gt;</span><span class="nx">Croissant</span><span class="o">&lt;</span><span class="sr">/li&gt;</span><span class="err">,
+                    </span>  <span class="o">&lt;</span><span class="nx">li</span> <span class="nx">key</span><span class="o">=</span><span class="dl">"</span><span class="s2">marmalade</span><span class="dl">"</span><span class="o">&gt;</span><span class="nx">Marmalade</span><span class="o">&lt;</span><span class="sr">/li</span><span class="err">&gt;
+                    </span><span class="p">];</span>
+                    
+                    <span class="c1">// React 16.2: fragment</span>
+                    <span class="kd">const</span> <span class="nx">Breakfast</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">(</span>
+                      <span class="o">&lt;</span><span class="nx">React</span><span class="p">.</span><span class="nx">Fragment</span><span class="o">&gt;</span>
+                        <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;</span><span class="nx">Coffee</span><span class="o">&lt;</span><span class="sr">/li</span><span class="err">&gt;
+                    </span>    <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;</span><span class="nx">Croissant</span><span class="o">&lt;</span><span class="sr">/li</span><span class="err">&gt;
+                    </span>    <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;</span><span class="nx">Marmalade</span><span class="o">&lt;</span><span class="sr">/li</span><span class="err">&gt;
+                    </span>  <span class="o">&lt;</span><span class="sr">/React.Fragment</span><span class="err">&gt;
+                    </span><span class="p">);</span>
+                    
+                    <span class="c1">// React 16.2: fragment (short syntax)</span>
+                    <span class="kd">const</span> <span class="nx">Breakfast</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">(</span>
+                      <span class="o">&lt;&gt;</span>
+                        <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;</span><span class="nx">Coffee</span><span class="o">&lt;</span><span class="sr">/li</span><span class="err">&gt;
+                    </span>    <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;</span><span class="nx">Croissant</span><span class="o">&lt;</span><span class="sr">/li</span><span class="err">&gt;
+                    </span>    <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;</span><span class="nx">Marmalade</span><span class="o">&lt;</span><span class="sr">/li</span><span class="err">&gt;
+                    </span>  <span class="o">&lt;</span><span class="sr">/</span><span class="err">&gt;
+                    </span><span class="p">);</span>
+                    
+                    <span class="c1">// React 16: fragments composition</span>
+                    <span class="kd">const</span> <span class="nx">Meals</span> <span class="o">=</span> <span class="p">(</span>
+                      <span class="o">&lt;</span><span class="nx">ul</span><span class="o">&gt;</span>
+                        <span class="o">&lt;</span><span class="nx">Breakfast</span> <span class="o">/&gt;</span>
+                        <span class="o">&lt;</span><span class="nx">Lunch</span> <span class="o">/&gt;</span>
+                        <span class="o">&lt;</span><span class="nx">Dinner</span> <span class="o">/&gt;</span>
+                      <span class="o">&lt;</span><span class="sr">/ul</span><span class="err">&gt;
+                    </span><span class="p">);</span>
+                    </code></pre>
+                    <div class="highlight__panel js-actions-panel">
+                    <div class="highlight__panel-action js-fullscreen-code-action">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                    </svg> -->
+                    
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                    </svg> -->
+                    
+                    </div>
+                    </div>
+                    </div>
+                    
+                    
+                    
+                    <p>Note that the short syntax may not be supported by <a href="https://reactjs.org/blog/2017/11/28/react-v16.2.0-fragment-support.html#support-for-fragment-syntax">the tools you’re using</a>.</p>
+                    
+                    <h6 style="color:black;">
+                      <a name="returning-strings-and-numbers-from-components" href="#returning-strings-and-numbers-from-components" class="anchor">
+                      </a>
+                      Returning strings and numbers from components
+                    </h6>
+                    
+                    <p>In React 16 components can return strings and numbers. This is useful for components that don’t need any markup, like internationalization or formatting:<br>
+                    </p>
+                    
+                    <div class="highlight js-code-highlight">
+                    <pre class="highlight javascript"><code><span class="c1">// React 15</span>
+                    <span class="kd">const</span> <span class="nx">LocalDate</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">date</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">(</span>
+                      <span class="o">&lt;</span><span class="nx">span</span><span class="o">&gt;</span>
+                        <span class="p">{</span><span class="nx">date</span><span class="p">.</span><span class="nx">toLocaleDateString</span><span class="p">(</span><span class="dl">'</span><span class="s1">de-DE</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
+                          <span class="na">year</span><span class="p">:</span> <span class="dl">'</span><span class="s1">numeric</span><span class="dl">'</span><span class="p">,</span>
+                          <span class="na">month</span><span class="p">:</span> <span class="dl">'</span><span class="s1">long</span><span class="dl">'</span><span class="p">,</span>
+                          <span class="na">day</span><span class="p">:</span> <span class="dl">'</span><span class="s1">numeric</span><span class="dl">'</span>
+                        <span class="p">})}</span>
+                      <span class="o">&lt;</span><span class="sr">/span</span><span class="err">&gt;
+                    </span><span class="p">);</span>
+                    
+                    <span class="c1">// React 16</span>
+                    <span class="kd">const</span> <span class="nx">LocalDate</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">date</span> <span class="p">})</span> <span class="o">=&gt;</span>
+                      <span class="nx">date</span><span class="p">.</span><span class="nx">toLocaleDateString</span><span class="p">(</span><span class="dl">'</span><span class="s1">de-DE</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
+                        <span class="na">year</span><span class="p">:</span> <span class="dl">'</span><span class="s1">numeric</span><span class="dl">'</span><span class="p">,</span>
+                        <span class="na">month</span><span class="p">:</span> <span class="dl">'</span><span class="s1">long</span><span class="dl">'</span><span class="p">,</span>
+                        <span class="na">day</span><span class="p">:</span> <span class="dl">'</span><span class="s1">numeric</span><span class="dl">'</span>
+                      <span class="p">});</span>
+                    </code></pre>
+                    <div class="highlight__panel js-actions-panel">
+                    <div class="highlight__panel-action js-fullscreen-code-action">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                    </svg>
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                    </svg> -->
+                    
+                    </div>
+                    </div>
+                    </div>
+                    
+                    
+                    
+                    <h6 style="color:black;">
+                      <a name="cancelling-setstate-to-avoid-rerendering" href="#cancelling-setstate-to-avoid-rerendering" class="anchor">
+                      </a>
+                      Cancelling setState() to avoid rerendering
+                    </h6>
+                    
+                    <p>In React 15 it wasn’t possible to cancel <code>setState()</code> and avoid rerendering, if your next state was based on the previous state. In React 16 you could return <code>null</code> in <code>setState()</code>’s callback:<br>
+                    </p>
+                    
+                    <div class="highlight js-code-highlight">
+                    <pre class="highlight javascript"><code><span class="c1">// React 16</span>
+                    <span class="nx">handleChange</span> <span class="o">=</span> <span class="nx">event</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                      <span class="kd">const</span> <span class="nx">city</span> <span class="o">=</span> <span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+                      <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">(</span>
+                        <span class="nx">prevState</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="nx">prevState</span><span class="p">.</span><span class="nx">city</span> <span class="o">!==</span> <span class="nx">city</span> <span class="p">?</span> <span class="p">{</span> <span class="nx">city</span> <span class="p">}</span> <span class="p">:</span> <span class="kc">null</span><span class="p">)</span>
+                      <span class="p">);</span>
+                    <span class="p">};</span>
+                    </code></pre>
+                    <div class="highlight__panel js-actions-panel">
+                    <div class="highlight__panel-action js-fullscreen-code-action">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                    </svg>
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                    </svg> -->
+                    
+                    </div>
+                    </div>
+                    </div>
+                    
+                    
+                    
+                    <p>In this example calling <code>handleChange()</code> with the same city name as in the state won’t cause a rerender.</p>
+                    
+                    <h6 style="color:black;">
+                      <a name="avoiding-prop-drilling-with-the-official-context-api-163" href="#avoiding-prop-drilling-with-the-official-context-api-163" class="anchor">
+                      </a>
+                      Avoiding prop drilling with the official context API (16.3)
+                    </h6>
+                    
+                    <p><a href="https://blog.kentcdodds.com/prop-drilling-bb62e02cb691">Prop drilling</a> is when you’re passing some data to a deeply nested component using a prop, so you have to add this prop to each layer of your React component tree between a component that owns the data and a component that consumes it.<br>
+                    </p>
+                    
+                    <div class="highlight js-code-highlight">
+                    <pre class="highlight javascript"><code><span class="kd">class</span> <span class="nx">Root</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+                      <span class="nx">state</span> <span class="o">=</span> <span class="p">{</span> <span class="na">theme</span><span class="p">:</span> <span class="nx">THEME_DARK</span> <span class="p">};</span>
+                      <span class="nx">handleThemeToggle</span> <span class="o">=</span> <span class="nx">theme</span> <span class="o">=&gt;</span>
+                        <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">(({</span> <span class="nx">theme</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">({</span>
+                          <span class="na">theme</span><span class="p">:</span> <span class="nx">theme</span> <span class="o">===</span> <span class="nx">THEME_DARK</span> <span class="p">?</span> <span class="nx">THEME_LIGHT</span> <span class="p">:</span> <span class="nx">THEME_DARK</span><span class="p">;</span>
+                        <span class="p">}));</span>
+                      <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+                        <span class="k">return</span> <span class="p">(</span>
+                          <span class="o">&lt;</span><span class="nx">Page</span>
+                            <span class="nx">onThemeToggle</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleThemeToggle</span><span class="p">}</span>
+                            <span class="p">{...</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">}</span>
+                            <span class="p">{...</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">}</span>
+                          <span class="sr">/</span><span class="err">&gt;
+                    </span>    <span class="p">);</span>
+                      <span class="p">}</span>
+                    <span class="p">}</span>
+                    
+                    <span class="c1">// Each layer will have to pass theme and theme toggle handler props</span>
+                    <span class="o">&lt;</span><span class="nx">SomeOtherComponent</span>
+                      <span class="nx">onThemeToggle</span><span class="o">=</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">onThemeToggle</span><span class="p">}</span>
+                      <span class="nx">theme</span><span class="o">=</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">theme</span><span class="p">}</span>
+                    <span class="sr">/&gt;</span><span class="err">;
+                    </span>
+                    <span class="c1">// Many layers below</span>
+                    <span class="kd">const</span> <span class="nx">Header</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">theme</span><span class="p">,</span> <span class="nx">onThemeToggle</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">(</span>
+                      <span class="o">&lt;</span><span class="nx">header</span> <span class="nx">className</span><span class="o">=</span><span class="p">{</span><span class="nx">cx</span><span class="p">(</span><span class="dl">'</span><span class="s1">header</span><span class="dl">'</span><span class="p">,</span> <span class="s2">`header--</span><span class="p">${</span><span class="nx">theme</span><span class="p">}</span><span class="s2">`</span><span class="p">)}</span><span class="o">&gt;</span>
+                        <span class="p">...</span>
+                        <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">onThemeToggle</span><span class="p">}</span><span class="o">&gt;</span><span class="nx">Toggle</span> <span class="nx">theme</span><span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
+                    </span>  <span class="o">&lt;</span><span class="sr">/header</span><span class="err">&gt;
+                    </span><span class="p">);</span>
+                    </code></pre>
+                    <div class="highlight__panel js-actions-panel">
+                    <div class="highlight__panel-action js-fullscreen-code-action">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                    </svg>
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                    </svg> -->
+                    
+                    </div>
+                    </div>
+                    </div>
+                    
+                    
+                    
+                    <p>That’s a lot of boilerplate code! With the <a href="https://reactjs.org/docs/context.html">context API</a> we can access our theme props anywhere in the component tree:<br>
+                    </p>
+                    
+                    <div class="highlight js-code-highlight">
+                    <pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">ThemeContext</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createContext</span><span class="p">(</span><span class="nx">THEME_DARK</span><span class="p">);</span>
+                    
+                    <span class="c1">// We should wrap our app in this component</span>
+                    <span class="kd">class</span> <span class="nx">ThemeProvider</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+                      <span class="nx">state</span> <span class="o">=</span> <span class="p">{</span> <span class="na">theme</span><span class="p">:</span> <span class="nx">THEME_DARK</span> <span class="p">};</span>
+                      <span class="nx">handleThemeToggle</span> <span class="o">=</span> <span class="nx">theme</span> <span class="o">=&gt;</span>
+                        <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">(({</span> <span class="nx">theme</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">({</span>
+                          <span class="na">theme</span><span class="p">:</span> <span class="nx">theme</span> <span class="o">===</span> <span class="nx">THEME_DARK</span> <span class="p">?</span> <span class="nx">THEME_LIGHT</span> <span class="p">:</span> <span class="nx">THEME_DARK</span>
+                        <span class="p">}));</span>
+                      <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+                        <span class="k">return</span> <span class="p">(</span>
+                          <span class="o">&lt;</span><span class="nx">ThemeContext</span><span class="p">.</span><span class="nx">Provider</span>
+                            <span class="nx">value</span><span class="o">=</span><span class="p">{{</span>
+                              <span class="na">onThemeToggle</span><span class="p">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">handleThemeToggle</span><span class="p">,</span>
+                              <span class="na">theme</span><span class="p">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">theme</span>
+                            <span class="p">}}</span>
+                          <span class="o">&gt;</span>
+                            <span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">children</span><span class="p">}</span>
+                          <span class="o">&lt;</span><span class="sr">/ThemeContext.Provider</span><span class="err">&gt;
+                    </span>    <span class="p">);</span>
+                      <span class="p">}</span>
+                    <span class="p">}</span>
+                    
+                    <span class="c1">// And then use theme consumer anywhere in the component tree</span>
+                    <span class="kd">const</span> <span class="nx">Header</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">(</span>
+                      <span class="o">&lt;</span><span class="nx">ThemeContext</span><span class="p">.</span><span class="nx">Consumer</span><span class="o">&gt;</span>
+                        <span class="p">{({</span> <span class="nx">theme</span><span class="p">,</span> <span class="nx">onThemeToggle</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">(</span>
+                          <span class="o">&lt;</span><span class="nx">header</span> <span class="nx">className</span><span class="o">=</span><span class="p">{</span><span class="nx">cx</span><span class="p">(</span><span class="dl">'</span><span class="s1">header</span><span class="dl">'</span><span class="p">,</span> <span class="s2">`header--</span><span class="p">${</span><span class="nx">theme</span><span class="p">}</span><span class="s2">`</span><span class="p">)}</span><span class="o">&gt;</span>
+                            <span class="p">...</span>
+                            <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">onThemeToggle</span><span class="p">}</span><span class="o">&gt;</span><span class="nx">Toggle</span> <span class="nx">theme</span><span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
+                    </span>      <span class="o">&lt;</span><span class="sr">/header</span><span class="err">&gt;
+                    </span>    <span class="p">)}</span>
+                      <span class="o">&lt;</span><span class="sr">/ThemeContext.Consumer</span><span class="err">&gt;
+                    </span><span class="p">);</span>
+                    </code></pre>
+                    <div class="highlight__panel js-actions-panel">
+                    <div class="highlight__panel-action js-fullscreen-code-action">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                    </svg>
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                    </svg> -->
+                    
+                    </div>
+                    </div>
+                    </div>
+                    
+                    
+                    
+                    <p><a href="https://codesandbox.io/s/l43j6j2n7z">Check out an example</a> on CodeSandbox.</p>
+                    
+                    <h6 style="color:black;">
+                      <a name="updating-state-based-on-props-with-getderivedstatefromprops-163" href="#updating-state-based-on-props-with-getderivedstatefromprops-163" class="anchor">
+                      </a>
+                      Updating state based on props with getDerivedStateFromProps() (16.3)
+                    </h6>
+                    
+                    <p>The <code>getDerivedStateFromProps()</code> lifecycle method is a replacement for <code>componentWillReceiveProps()</code>. It’s useful when you have a prop with a default value for a state property, but you want to reset the state when that prop changes. For example, a modal that has a prop that says if it’s initially open, and a state that says if a modal is open now:<br>
+                    </p>
+                    
+                    <div class="highlight js-code-highlight">
+                    <pre class="highlight javascript"><code><span class="c1">// React 15</span>
+                    <span class="kd">class</span> <span class="nx">Modal</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+                      <span class="nx">state</span> <span class="o">=</span> <span class="p">{</span>
+                        <span class="na">isOpen</span><span class="p">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">isOpen</span>
+                      <span class="p">};</span>
+                      <span class="nx">componentWillReceiveProps</span><span class="p">(</span><span class="nx">nextProps</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="nx">nextProps</span><span class="p">.</span><span class="nx">isOpen</span> <span class="o">!==</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">isOpen</span><span class="p">)</span> <span class="p">{</span>
+                          <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span>
+                            <span class="na">isOpen</span><span class="p">:</span> <span class="nx">nextProps</span><span class="p">.</span><span class="nx">isOpen</span>
+                          <span class="p">});</span>
+                        <span class="p">}</span>
+                      <span class="p">}</span>
+                    <span class="p">}</span>
+                    
+                    <span class="c1">// React 16.3</span>
+                    <span class="kd">class</span> <span class="nx">Modal</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+                      <span class="nx">state</span> <span class="o">=</span> <span class="p">{};</span>
+                      <span class="kd">static</span> <span class="nx">getDerivedStateFromProps</span><span class="p">(</span><span class="nx">nextProps</span><span class="p">,</span> <span class="nx">prevState</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="nx">nextProps</span><span class="p">.</span><span class="nx">isOpen</span> <span class="o">!==</span> <span class="nx">prevState</span><span class="p">.</span><span class="nx">isOpen</span><span class="p">)</span> <span class="p">{</span>
+                          <span class="k">return</span> <span class="p">{</span>
+                            <span class="na">isOpen</span><span class="p">:</span> <span class="nx">nextProps</span><span class="p">.</span><span class="nx">isOpen</span>
+                          <span class="p">};</span>
+                        <span class="p">}</span>
+                      <span class="p">}</span>
+                    <span class="p">}</span>
+                    </code></pre>
+                    <div class="highlight__panel js-actions-panel">
+                    <div class="highlight__panel-action js-fullscreen-code-action">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                    </svg>
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                    </svg>
+                     -->
+                    </div>
+                    </div>
+                    </div>
+                    
+                    
+                    
+                    <p>The <code>getDerivedStateFromProps()</code> method is called when a component is created and when it receives new props, so you don’t have to convert props to state twice (on initialization and in <code>componentWillReceiveProps</code>).</p>
+                    
+                    <h6 style="color:black;">
+                      <a name="rerendering-function-components-on-props-change-with-reactmemo-166" href="#rerendering-function-components-on-props-change-with-reactmemo-166" class="anchor">
+                      </a>
+                      Rerendering function components on props change with React.memo() (16.6)
+                    </h6>
+                    
+                    <p><a href="https://reactjs.org/docs/react-api.html#reactmemo">React.memo()</a> does the same for function components as <a href="https://reactjs.org/docs/react-api.html#reactpurecomponent">PureComponent</a> does for class components: only rerenders the component if its props change.<br>
+                    </p>
+                    
+                    <div class="highlight js-code-highlight">
+                    <pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">MyComponent</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">memo</span><span class="p">(</span><span class="nx">props</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                      <span class="cm">/* Only rerenders if props change */</span>
+                    <span class="p">});</span>
+                    </code></pre>
+                    <div class="highlight__panel js-actions-panel">
+                    <div class="highlight__panel-action js-fullscreen-code-action">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                    </svg>
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                    </svg> -->
+                    
+                    </div>
+                    </div>
+                    </div>
+                    
+                    
+                    
+                    <h6 style="color:black;">
+                      <a name="easier-access-to-context-in-class-components-with-contexttype-166" href="#easier-access-to-context-in-class-components-with-contexttype-166" class="anchor">
+                      </a>
+                      Easier access to context in class components with contextType (16.6)
+                    </h6>
+                    
+                    <p><a href="https://reactjs.org/blog/2018/10/23/react-v-16-6.html#static-contexttype">Class.contextType</a> simplifies access to the React context <em>in class components</em>:<br>
+                    </p>
+                    
+                    <div class="highlight js-code-highlight">
+                    <pre class="highlight javascript"><code><span class="kd">class</span> <span class="nx">App</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+                      <span class="kd">static</span> <span class="nx">contextType</span> <span class="o">=</span> <span class="nx">ThemeContext</span><span class="p">;</span>
+                      <span class="nx">componentDidMount</span><span class="p">()</span> <span class="p">{</span>
+                        <span class="kd">const</span> <span class="p">{</span> <span class="nx">theme</span> <span class="p">}</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">context</span><span class="p">;</span>
+                        <span class="cm">/* ... */</span>
+                      <span class="p">}</span>
+                      <span class="nx">componentDidUpdate</span><span class="p">()</span> <span class="p">{</span>
+                        <span class="kd">const</span> <span class="p">{</span> <span class="nx">theme</span> <span class="p">}</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">context</span><span class="p">;</span>
+                        <span class="cm">/* ... */</span>
+                      <span class="p">}</span>
+                      <span class="nx">componentWillUnmount</span><span class="p">()</span> <span class="p">{</span>
+                        <span class="kd">const</span> <span class="p">{</span> <span class="nx">theme</span> <span class="p">}</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">context</span><span class="p">;</span>
+                        <span class="cm">/* ... */</span>
+                      <span class="p">}</span>
+                      <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+                        <span class="kd">const</span> <span class="p">{</span> <span class="nx">theme</span> <span class="p">}</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">context</span><span class="p">;</span>
+                        <span class="k">return</span> <span class="p">(</span>
+                          <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span>
+                            <span class="p">{</span><span class="nx">theme</span> <span class="o">===</span> <span class="nx">THEME_DARK</span>
+                              <span class="p">?</span> <span class="dl">'</span><span class="s1">Welcome to the dark side!</span><span class="dl">'</span>
+                              <span class="p">:</span> <span class="dl">'</span><span class="s1">Welcome to the light side!</span><span class="dl">'</span><span class="p">}</span>
+                          <span class="o">&lt;</span><span class="sr">/h1</span><span class="err">&gt;
+                    </span>    <span class="p">);</span>
+                      <span class="p">}</span>
+                    <span class="p">}</span>
+                    </code></pre>
+                    <div class="highlight__panel js-actions-panel">
+                    <div class="highlight__panel-action js-fullscreen-code-action">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                    </svg>
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                    </svg> -->
+                </div>
+                <div class="tags top_30">
+                    <span>Tags:</span>
+                    <a href="#">web,</a>
+                    <a href="#">Angular,</a>
+                    <a href="#">design,</a>
+                    <a href="#">Typescript,</a>
+                    <a href="#">JavaScript,</a>
+                    <a href="#">AngularJs</a>
+                </div>
+                <!-- Related Post -->
+                <!-- <div class="post-list">
+                    <div class="section-title bottom_15 top_60"><span></span><p style="color:black"><b>Related Posts</p></div>
+                    <ul>
+
+                        <li>
+                            <a href="#">
+                                <div class="info">Web Design <span>April 14, 17</span></div>
+                                <p class="little-text">Gregor then turned to look out the window at the dull weather</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="info">Photography <span>April 14, 17</span></div>
+                                <p class="little-text">Doing business like this takes much more effort than doing your own business at home</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="info">Development <span>April 14, 17</span></div>
+                                <p class="little-text">Ask especially collecting terminated may son expression extremely!</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div> -->
+                <!-- Post Comments -->
+                <div class="post-comment">
+                    <div class="section-title bottom_30 top_60"><span></span><p style="color:black"><b>Post Comments</b></p></div>
+                    <ul>
+                        <!-- a comment -->
+                        <li>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2 col-xs-3 person-img">
+                                    <img src="../images/person.jpg" alt="">
+                                </div>
+                                <div class="col-md-10 col-sm-10 col-xs-9 comment-content">
+                                    <div class="name">Charles A. Bullock</div> 
+                                    <span class="date">Aug 26, 2021</span>   
+                                    <p>He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs.</p>
+                                    <a href="#"><i class="fa fa-reply" aria-hidden="true"></i>Reply</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- a comment -->
+                        <li>
+                            <div class="row reply">
+                                <div class="col-md-2 col-sm-2 col-xs-3 person-img">
+                                    <img src="../images/person.jpg" alt="">
+                                </div>
+                                <div class="col-md-10 col-sm-10 col-xs-9 comment-content">
+                                    <div class="name">Craig E. Smith</div> 
+                                    <span class="date">Aug 23, 2021</span>   
+                                    <p>He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs.</p>
+                                    <a href="#"><i class="fa fa-reply" aria-hidden="true"></i>Reply</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- a comment -->
+                        <li>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2 col-xs-3 person-img">
+                                    <img src="../images/person.jpg" alt="">
+                                </div>
+                                <div class="col-md-10 col-sm-10 col-xs-9 comment-content">
+                                    <div class="name">Javier D. Phillips</div> 
+                                    <span class="date">Aug 26, 2021</span>   
+                                    <p>He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs.</p>
+                                    <a href="#"><i class="fa fa-reply" aria-hidden="true"></i>Reply</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>   
+                </div>
+                <div class="leave-comment">
+                    <div class="section-title bottom_30 top_60"><span></span><p style="color:black"><b>Leave a Comment</b></p></div>
+                    <form class="site-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input class="site-input" type="input" name="" placeholder="Name">
+                            </div>
+                            <div class="col-md-6">
+                                <input class="site-input" type="input" name="" placeholder="E-mail">
+                            </div>
+                            <div class="col-md-12">
+                                <textarea class="site-area" placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-md-12 top_15 bottom_30">
+                                <button class="site-btn" type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>   
+                </div>
+            </div> <!-- post end -->
+            <!--Sidebar-->
+            <!-- <div class="col-md-4 blog-sidebar">
+
+                <div class="category">
+                    <div class="section-title bottom_15 top_15"><span></span><h3>Categories</h3></div>
+                    <ul class="category-list">
+                        <li><a href="#">Web design</a><span>11</span></li>
+                        <li><a href="#">Development</a><span>12</span></li>
+                        <li><a href="#">Photography</a><span>16</span></li>
+                        <li><a href="#">Branding</a><span>16</span></li>
+                        <li><a href="#">Other</a><span>16</span></li>
+                    </ul>
+                </div>
+
+                <div class="post-list">
+                    <div class="section-title bottom_15 top_60"><span></span><h3>Related Posts</h3></div>
+                    <ul>
+
+                        <li>
+                            <a href="#">
+                                <div class="info">Development <span>Oct 21, 17</span></div>
+                                <p class="little-text">How to vertically center a div for all browsers?</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="info">Web Design <span>April 14, 17</span></div>
+                                <p class="little-text">How to convert a Sketch design file into a layered Photoshop file</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="info">Web Design <span>Mar 18, 17</span></div>
+                                <p class="little-text">The Bookmarkable Photoshop Tutorial for Beginners</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="advertisement">
+                    <div class="section-title bottom_30 top_60"><span></span><h3>Advertisement</h3></div>
+
+                    <img src="../images/image.jpg" alt="">    
+                </div>
+            </div>  -->
+        </div>
+    </div>
+    
+</div><!-- Content - End -->
+ 
+<!-- Footer
+================================================== -->
+<footer>
+    <div class="footer col-md-12 top_30 bottom_30">
+        <div class="name col-md-4 hidden-md hidden-sm hidden-xs">MILAN STEVANOVIĆ.</div>
+        <div class="copyright col-lg-8 col-md-12">© 2021 All rights reserved. Designed by <a href="https://themeforest.net/user/tavonline">tavonline</a> </div>
+    </div>
+</footer>
+    
+</div> <!-- Tab Container - End -->
+</div> <!-- Row - End --> 
+</div> <!-- Wrapper - End -->   
+
+<!-- Javascripts
+================================================== -->  
+<script src="../js/jquery-2.1.4.min.js"></script> 
+<script src="../cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+<script src="../js/bootstrap.min.js"></script> 
+<script src="../js/jquery.easytabs.min.js"></script>
+<script src="../js/main.js"></script>
+<!-- for color alternatives -->
+<script src="../js/jquery.cookie-1.4.1.min.js"></script>
+<script src="../js/subpage-demo.js"></script>
+<link rel="stylesheet" href="../css/Demo.min.css" />
+
+</body>
+
+<!-- Mirrored from thetav.online/html/mat/doctor/blog-posts/blog-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Nov 2021 22:43:32 GMT -->
+</html>

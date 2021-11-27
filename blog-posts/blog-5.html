@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from thetav.online/html/mat/doctor/blog-posts/blog-5.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Nov 2021 22:43:30 GMT -->
+<head>
+
+<!-- Simple Page Needs
+================================================== -->
+<title>MILAN STEVANOVIĆ</title>
+<meta charset="UTF-8">
+<meta name="description" content="Mat - Resume & vCard HTML Template">
+<meta name="keywords" content="personal, vcard, portfolio">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<!-- Favicon
+================================================== -->  
+<link href="favicon.html" rel="shortcut icon" type="image/x-icon" />
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="../css/bootstrap.css"/>
+<link rel="stylesheet" href="../css/reset.css"/>
+<link rel="stylesheet" href="../cubeportfolio/css/cubeportfolio.min.css"/>
+<link rel="stylesheet" href="../css/style.css"/>
+<link rel="stylesheet" href="../css/colors/blue.css" id="color" />
+    
+<!-- Google Web fonts
+================================================== --> 
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+
+<!-- Font Icons
+================================================== --> 
+<link rel="stylesheet" href="../icon-fonts/font-awesome-4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="../icon-fonts/medical/flaticon.css" />
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+<body>
+ <!-- Preloading -->
+<div id="preloader">
+    <div class="spinner">
+    </div>
+</div>  
+    
+<!-- Wrapper --> 
+<div class="wrapper top_60 container">
+<div class="row">
+        
+<!-- Profile Section
+================================================== --> 
+<div class="col-lg-3 col-md-4">
+    <div class="profile">
+        <div class="profile-name">
+            <span class="name">MILAN STEVANOVIĆ</span><br>
+            <span class="job">Full Stack Developer</span>
+        </div>
+        <figure class="profile-image">
+            <img src="../images/profile.jpg" alt="">
+        </figure>
+        
+            <ul class="profile-information">
+                <li></li>
+                <li><p><span>Name:</span> Milan Stevanović</p></li>
+                <!-- <li><p><span>Birthday:</span> 06 December 1987</p></li> -->
+                <li><p><span>Freelancer:</span> Available</p></li>
+                <li><a href="mailto://milan.stevanovic.ms3@gmail.com" style="text-decoration: none; color:black"><div style="float: left !important;">E-mail:</div><div style="float: left; width:50%; color:gray"> milan.stevanovic.ms3<br>@gmail.com</div><div style="clear: both;"></div></li>
+                <li><a href="https://www.linkedin.com/in/milan-stevan0vic/" style="text-decoration: none; color:black">LinkedIn:<i style="color: gray;"> milan-stevan0vic</a></li>
+                <!-- <li><a href="tel>Phone:</span> +381 64 4351 1 86</p></li> -->
+              </ul>
+
+        <div class="col-md-12">
+            <a class="site-btn icon" href="../Milan.pdf" target="_blank">Download Cv <i class="fa fa-download" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- Page Tab Container Div -->   
+<div id="ajax-tab-container" class="col-lg-9 col-md-8 tab-container">
+    
+<!-- Header
+================================================== --> 
+<div class="row">
+    <header class="col-md-12">
+        <nav>
+            <div class="row">
+                <!-- navigation bar -->
+                <div class="col-md-8 col-sm-8 col-xs-4">
+                    <ul class="tabs">
+                        <li class="tab">
+                            <a class="home-btn" href="../index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="tab"><a href="../index.html#blog">BACK TO BLOG PAGE</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-8 dynamic">
+                    <a href="mailto://milan.stevanovic.ms3@gmail.com" class="pull-right site-btn icon hidden-xs">Hire Me <i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+                    <div class="hamburger pull-right hidden-lg hidden-md"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                    <div class="hidden-md social-icons pull-right"> 
+                        <a class="fb" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                        <a class="tw" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> 
+                        <a class="ins" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+                        <a class="dr" href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a> 
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+</div>   
+<!-- Page Content
+================================================== --> 
+<div id="content" class="panel-container col-md-12">
+  
+    <!-- Blog Page
+    ================================================== --> 
+    <div id="blog-post">
+        <div class="row">
+            <!--Blog Post-->
+            <div class="col-md-12 post">
+                <div class="blog-image">
+                    <img src="../images/blogs/blog-5.jpg" alt="">
+                </div>
+                <div class="post-content">
+                    <h1 class="blog-title bottom_30 top_30">Using laravel-echo with Nuxt.js</h1>
+                    <p>Hi devs, last day I was trying to configure my Nuxt.js client so it can consume public and private channels from my backend which is built with Laravel along the Laravel Websockets package.</p>
+
+                    <p>So this post is basically like a guide for me and everyone else in the same situation, my current stack is as follows:</p>
+                    
+                    <ul>
+                    <li>Laravel 6</li>
+                    <li><a href="https://laravel.com/docs/6.x/sanctum">Laravel Sanctum</a></li>
+                    <li><a href="https://docs.beyondco.de/laravel-websockets/">Laravel Websockets package</a></li>
+                    <li>Nuxt.js</li>
+                    </ul>
+                    
+                    
+                    <hr>
+                    
+                    <p>The following is the Vue plugin I created with the basic configuration you have to define in order to access and authenticate private channels:<br>
+                    </p>
+                    
+                    <div class="highlight"><pre class="highlight javascript"><code><span class="k">import</span> <span class="nx">Vue</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">vue</span><span class="dl">'</span><span class="p">;</span>
+                    <span class="k">import</span> <span class="nx">Echo</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">laravel-echo</span><span class="dl">'</span><span class="p">;</span>
+                    
+                    <span class="kd">const</span> <span class="nx">echo</span> <span class="o">=</span> <span class="p">{};</span>
+                    
+                    <span class="nx">echo</span><span class="p">.</span><span class="nx">install</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">Vue</span><span class="p">)</span> <span class="p">{</span>
+                      <span class="nx">Vue</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">$pusher</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">pusher-js</span><span class="dl">'</span><span class="p">);</span>
+                      <span class="nx">Vue</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">$echo</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Echo</span><span class="p">({</span>
+                        <span class="na">authEndpoint</span><span class="p">:</span> <span class="dl">'</span><span class="s1">http://your-domain.test/api/broadcasting/auth</span><span class="dl">'</span><span class="p">,</span>
+                        <span class="na">auth</span><span class="p">:</span> <span class="p">{</span>
+                          <span class="na">headers</span><span class="p">:</span> <span class="p">{</span>
+                            <span class="na">Authorization</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Bearer XXXXXXXXXXXX</span><span class="dl">'</span><span class="p">,</span>
+                          <span class="p">}</span>
+                        <span class="p">},</span>
+                        <span class="na">broadcaster</span><span class="p">:</span> <span class="dl">'</span><span class="s1">pusher</span><span class="dl">'</span><span class="p">,</span>
+                        <span class="na">key</span><span class="p">:</span> <span class="dl">'</span><span class="s1">your-key</span><span class="dl">'</span><span class="p">,</span>
+                        <span class="na">wsHost</span><span class="p">:</span> <span class="dl">'</span><span class="s1">your.websocket.host</span><span class="dl">'</span><span class="p">,</span>
+                        <span class="na">wsPort</span><span class="p">:</span> <span class="mi">443</span><span class="p">,</span>
+                        <span class="na">encrypted</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                        <span class="na">disableStats</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+                      <span class="p">});</span>
+                    <span class="p">};</span>
+                    
+                    <span class="nx">Vue</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">echo</span><span class="p">);</span>
+                    </code></pre></div>
+                    
+                    
+                    
+                    <p>This is the description for the parameters we are going to use and what they are for:</p>
+                    
+                    <p><strong>auth_endpoint</strong>: Since you are using Nuxt or Vue it means you are generating a client that might be hosted or located in a different place than your backend, so you have to specify how to reach the backend.</p>
+                    
+                    <p><strong>auth</strong>: For this scenario I am using Laravel Sanctum authentication package, this is the reason I have to specify the Bearer token I am using.</p>
+                    
+                    <p><strong>broadcaster</strong>: I am using pusher-js which is the package required for Laravel-websockets.</p>
+                    
+                    <p>The 3 parameters above are the most important since they are not often showed as examples and are the keys so we can connect to our decoupled backend. The rest of them are necessary on any configuration.</p>
+                    
+                    
+                    <hr>
+                    
+                    <p>Once you defined the Echo instance, you can define your channels on any component:<br>
+                    </p>
+                    
+                    <div class="highlight"><pre class="highlight javascript"><code><span class="k">this</span><span class="p">.</span><span class="nx">$echo</span><span class="p">.</span><span class="kr">private</span><span class="p">(</span><span class="dl">'</span><span class="s1">App.User.</span><span class="dl">'</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">$auth</span><span class="p">.</span><span class="nx">user</span><span class="p">.</span><span class="nx">id</span><span class="p">)</span>
+                            <span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="dl">'</span><span class="s1">GeneralEvent</span><span class="dl">'</span><span class="p">,</span> <span class="nx">e</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                              <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">GENERAL EVENT: </span><span class="dl">"</span><span class="p">,</span> <span class="nx">e</span><span class="p">);</span>
+                            <span class="p">})</span>
+                            <span class="p">.</span><span class="nx">notification</span><span class="p">(</span><span class="nx">notification</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                              <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">NOTIFICATION: </span><span class="dl">"</span><span class="p">,</span> <span class="nx">notification</span><span class="p">);</span>
+                            <span class="p">});</span>
+                    </code></pre></div>
+                    
+                    
+                    
+                    <p>It is also important to add the following routes on your api.php routes file given you are using api authentication. As you can see we are specifying the sanctum middleware. Unlike web routes the session authentication is already applied when you enable the BroadcastServiceProvider.php file.<br>
+                    </p>
+                    
+                    <div class="highlight"><pre class="highlight php"><code><span class="nx">Broadcast</span><span class="o">::</span><span class="na">routes</span><span class="p">([</span><span class="s1">'middleware'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'auth:sanctum'</span><span class="p">]]);</span>
+                    </code></pre></div>
+                    
+                    
+                    
+                    
+                    <hr>
+                    
+                    <p>At this point you should be able to authenticate your private channels. But another important thing with this configuration is the way we are going to set our authentication token into our plugin. Luckily for us there is a package created by the Nuxt community: </p>
+                    
+                    <ul>
+                    <li><a href="https://github.com/nuxt-community/laravel-echo">laravel-echo</a></li>
+                    </ul>
+                    
+                    <p>I decided to go with this package instead my own plugin because I wasn't sure how to handle the auth mechanism, and also because I am using the nuxt-auth package which you can pair with laravel-echo package easily.</p>
+                    
+                    <p>So I ended up with the following configuration in nuxt.config.js<br>
+                    </p>
+                    
+                    <div class="highlight"><pre class="highlight javascript"><code><span class="nx">buildModules</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">[</span><span class="dl">'</span><span class="s1">@nuxtjs/laravel-echo</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
+                          <span class="na">broadcaster</span><span class="p">:</span> <span class="dl">'</span><span class="s1">pusher</span><span class="dl">'</span><span class="p">,</span>
+                          <span class="na">authModule</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                          <span class="na">connectOnLogin</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                          <span class="na">authEndpoint</span><span class="p">:</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">API_URL</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">/broadcasting/auth</span><span class="dl">'</span><span class="p">,</span>
+                          <span class="na">key</span><span class="p">:</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">WEBSOCKET_KEY</span><span class="p">,</span>
+                          <span class="na">wsHost</span><span class="p">:</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">WEBSOCKET_HOST</span><span class="p">,</span>
+                          <span class="na">wsPort</span><span class="p">:</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">WEBSOCKET_PORT</span><span class="p">,</span>
+                          <span class="na">encrypted</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                          <span class="na">disableStats</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                        <span class="p">}],</span>
+                      <span class="p">],</span>
+                    </code></pre></div>
+                    
+                    
+                    
+                    <p><strong>authModule</strong>: When true it leverages from Nuxt auth module, this way you don't worry about how the auth is being handled, this will set up the token or any other authentication method internally unlike our manual set up.</p>
+                    
+                    <p><strong>connectOnLogin</strong>: When Nuxt auth module is authenticated it will allow you to connect your private channels when needed.</p>
+                    
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                    </svg>
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                    </svg> -->
+                </div>
+                <!-- <div class="tags top_30">
+                    <span>Tags:</span>
+                    <a href="#">web,</a>
+                    <a href="#">Angular,</a>
+                    <a href="#">design,</a>
+                    <a href="#">Typescript,</a>
+                    <a href="#">JavaScript,</a>
+                    <a href="#">AngularJs</a>
+                </div> -->
+                <!-- Related Post -->
+                <!-- <div class="post-list">
+                    <div class="section-title bottom_15 top_60"><span></span><p style="color:black"><b>Related Posts</p></div>
+                    <ul>
+
+                        <li>
+                            <a href="#">
+                                <div class="info">Web Design <span>April 14, 17</span></div>
+                                <p class="little-text">Gregor then turned to look out the window at the dull weather</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="info">Photography <span>April 14, 17</span></div>
+                                <p class="little-text">Doing business like this takes much more effort than doing your own business at home</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="info">Development <span>April 14, 17</span></div>
+                                <p class="little-text">Ask especially collecting terminated may son expression extremely!</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div> -->
+                <!-- Post Comments -->
+                <div class="post-comment">
+                    <div class="section-title bottom_30 top_60"><span></span><p style="color:black"><b>Post Comments</b></p></div>
+                    <ul>
+                        <!-- a comment -->
+                        <li>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2 col-xs-3 person-img">
+                                    <img src="../images/person.jpg" alt="">
+                                </div>
+                                <div class="col-md-10 col-sm-10 col-xs-9 comment-content">
+                                    <div class="name">Charles A. Bullock</div> 
+                                    <span class="date">Aug 26, 2021</span>   
+                                    <p>He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs.</p>
+                                    <a href="#"><i class="fa fa-reply" aria-hidden="true"></i>Reply</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- a comment -->
+                        <li>
+                            <div class="row reply">
+                                <div class="col-md-2 col-sm-2 col-xs-3 person-img">
+                                    <img src="../images/person.jpg" alt="">
+                                </div>
+                                <div class="col-md-10 col-sm-10 col-xs-9 comment-content">
+                                    <div class="name">Craig E. Smith</div> 
+                                    <span class="date">Aug 23, 2021</span>   
+                                    <p>He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs.</p>
+                                    <a href="#"><i class="fa fa-reply" aria-hidden="true"></i>Reply</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- a comment -->
+                        <li>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2 col-xs-3 person-img">
+                                    <img src="../images/person.jpg" alt="">
+                                </div>
+                                <div class="col-md-10 col-sm-10 col-xs-9 comment-content">
+                                    <div class="name">Javier D. Phillips</div> 
+                                    <span class="date">Aug 26, 2021</span>   
+                                    <p>He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs.</p>
+                                    <a href="#"><i class="fa fa-reply" aria-hidden="true"></i>Reply</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>   
+                </div>
+                <div class="leave-comment">
+                    <div class="section-title bottom_30 top_60"><span></span><p style="color:black"><b>Leave a Comment</b></p></div>
+                    <form class="site-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input class="site-input" type="input" name="" placeholder="Name">
+                            </div>
+                            <div class="col-md-6">
+                                <input class="site-input" type="input" name="" placeholder="E-mail">
+                            </div>
+                            <div class="col-md-12">
+                                <textarea class="site-area" placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-md-12 top_15 bottom_30">
+                                <button class="site-btn" type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>   
+                </div>
+            </div> <!-- post end -->
+            <!--Sidebar-->
+            <!-- <div class="col-md-4 blog-sidebar">
+
+                <div class="category">
+                    <div class="section-title bottom_15 top_15"><span></span><h3>Categories</h3></div>
+                    <ul class="category-list">
+                        <li><a href="#">Web design</a><span>11</span></li>
+                        <li><a href="#">Development</a><span>12</span></li>
+                        <li><a href="#">Photography</a><span>16</span></li>
+                        <li><a href="#">Branding</a><span>16</span></li>
+                        <li><a href="#">Other</a><span>16</span></li>
+                    </ul>
+                </div>
+
+                <div class="post-list">
+                    <div class="section-title bottom_15 top_60"><span></span><h3>Related Posts</h3></div>
+                    <ul>
+
+                        <li>
+                            <a href="#">
+                                <div class="info">Development <span>Oct 21, 17</span></div>
+                                <p class="little-text">How to vertically center a div for all browsers?</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="info">Web Design <span>April 14, 17</span></div>
+                                <p class="little-text">How to convert a Sketch design file into a layered Photoshop file</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="info">Web Design <span>Mar 18, 17</span></div>
+                                <p class="little-text">The Bookmarkable Photoshop Tutorial for Beginners</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="advertisement">
+                    <div class="section-title bottom_30 top_60"><span></span><h3>Advertisement</h3></div>
+
+                    <img src="../images/image.jpg" alt="">    
+                </div>
+            </div>  -->
+        </div>
+    </div>
+    
+</div><!-- Content - End -->
+ 
+<!-- Footer
+================================================== -->
+<footer>
+    <div class="footer col-md-12 top_30 bottom_30">
+        <div class="name col-md-4 hidden-md hidden-sm hidden-xs">MILAN STEVANOVIĆ.</div>
+        <div class="copyright col-lg-8 col-md-12">© 2021 All rights reserved. Designed by <a href="https://themeforest.net/user/tavonline">tavonline</a> </div>
+    </div>
+</footer>
+    
+</div> <!-- Tab Container - End -->
+</div> <!-- Row - End --> 
+</div> <!-- Wrapper - End -->   
+
+<!-- Javascripts
+================================================== -->  
+<script src="../js/jquery-2.1.4.min.js"></script> 
+<script src="../cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+<script src="../js/bootstrap.min.js"></script> 
+<script src="../js/jquery.easytabs.min.js"></script>
+<script src="../js/main.js"></script>
+<!-- for color alternatives -->
+<script src="../js/jquery.cookie-1.4.1.min.js"></script>
+<script src="../js/subpage-demo.js"></script>
+<link rel="stylesheet" href="../css/Demo.min.css" />
+
+</body>
+
+<!-- Mirrored from thetav.online/html/mat/doctor/blog-posts/blog-5.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Nov 2021 22:43:32 GMT -->
+</html>
